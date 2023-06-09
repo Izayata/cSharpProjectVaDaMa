@@ -7,6 +7,6 @@ Irodai Kliens  - Valentin
 Szerelő kliens - Martin
 
 Hasznos linkek:
-https://www.nuget.org/packages/StyleCop.Analyzers
+https://www.nuget.org/packages/StyleCop.Analyzers - Stílus package
 
 //A Deberceni Egyetem Informatika Karának Szoftverfejlesztés C# nyelven nagyvállalati környezetben c. kurzusára készül a projekt.
