@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rxgOd6dqnePHT3/GQYby/YkLvqT/RmOIppHJetZo2grs7NlaxGJhZD7iepoPakYGbSuDiPNsvTQKCOCiP72t2Q==",
+  "dgSpecHash": "OpckFEzTAnTitkqAhjpr3EksE6AUMoYVTYOTKRkcspvQIOpmLljWdvltzC+nHQD9BTrrKgk6p97yKdGZJ86n2g==",
   "success": true,
   "projectFilePath": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\SzereloKliensApp\\SzereloKliensApp.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\moonw\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\moonw\\.nuget\\packages\\microsoft.jsinterop\\6.0.15\\microsoft.jsinterop.6.0.15.nupkg.sha512",
     "C:\\Users\\moonw\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.15\\microsoft.jsinterop.webassembly.6.0.15.nupkg.sha512",
+    "C:\\Users\\moonw\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
     "C:\\Users\\moonw\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\moonw\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\moonw\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
