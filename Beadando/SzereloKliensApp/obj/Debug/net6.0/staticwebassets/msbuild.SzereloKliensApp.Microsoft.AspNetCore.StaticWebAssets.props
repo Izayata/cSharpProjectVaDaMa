@@ -297,7 +297,7 @@
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Alternative</AssetRole>
-      <RelatedAsset>D:\Tanulmányok\Egyetem\Debrecen\not_categorized\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\Projekt\cSharpProjectVaDaMa\Beadando\SzereloKliensApp\bin\Debug\net6.0\wwwroot\_framework\blazor.webassembly.js</RelatedAsset>
+      <RelatedAsset>C:\Users\Broxigar\Source\Repos\cSharpProjectVaDaMa\Beadando\SzereloKliensApp\bin\Debug\net6.0\wwwroot\_framework\blazor.webassembly.js</RelatedAsset>
       <AssetTraitName>Content-Encoding</AssetTraitName>
       <AssetTraitValue>gzip</AssetTraitValue>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

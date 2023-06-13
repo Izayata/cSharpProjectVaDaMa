@@ -1794,23 +1794,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\moonw\\.nuget\\packages\\": {},
+    "C:\\Users\\Broxigar\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\IrodaiKliensApp\\IrodaiKliensApp.csproj",
+      "projectUniqueName": "C:\\Users\\Broxigar\\Source\\Repos\\cSharpProjectVaDaMa\\Beadando\\IrodaiKliensApp\\IrodaiKliensApp.csproj",
       "projectName": "IrodaiKliensApp",
-      "projectPath": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\IrodaiKliensApp\\IrodaiKliensApp.csproj",
-      "packagesPath": "C:\\Users\\moonw\\.nuget\\packages\\",
-      "outputPath": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\IrodaiKliensApp\\obj\\",
+      "projectPath": "C:\\Users\\Broxigar\\Source\\Repos\\cSharpProjectVaDaMa\\Beadando\\IrodaiKliensApp\\IrodaiKliensApp.csproj",
+      "packagesPath": "C:\\Users\\Broxigar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Broxigar\\Source\\Repos\\cSharpProjectVaDaMa\\Beadando\\IrodaiKliensApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\moonw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Broxigar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1819,6 +1819,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1875,7 +1876,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
