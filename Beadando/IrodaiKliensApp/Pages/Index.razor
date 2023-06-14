@@ -2,6 +2,8 @@
 @using Beadando.Contract;
 @using IrodaiKliensApp.Services
 @inject IJobsService JobService
+@using System.Linq
+@using System.ComponentModel
 
 
 @if (Jobs is null)
@@ -10,12 +12,18 @@
 }
 else
 {
-        <h3>Szerelések</h3>
+        <h3>Szerelések</h3>        
+        <p>
+        Title: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+        </p>
         <table class="table table-bordered table-hover">
             <thead>
                 <tr>
-                    <th>Ügyfél neve</th>
-                    <th>Autó típusa</th>
+                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ClientName))">Ügyfél neve</a></th>
+                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.CarType))">Autó típusa</a></th>
+                    @*<th>Ügyfél neve</th>*@
+                    @*<th>Autó típusa</th>*@
                     <th>Autó rendszáma</th>
                     <th>Gyártási év</th>
                     <th>Munka kategória</th>
@@ -55,4 +63,39 @@ else
     {
         Jobs = await JobService.GetAllJobAsync();
     }
+
+    private string sortBy = ""; // aktuális rendezési kategória
+    private bool sortAscending = true; // rendezés iránya
+
+    private void SortJobsBy(string property)
+    {
+        if (sortBy == property)
+        {
+            // Ha ugyanarra a kategóriára kattintottak, megfordítjuk az irányt
+            sortAscending = !sortAscending;
+        }
+        else
+        {
+            // Ha más kategóriára kattintottak, az irány alapértelmezetten növekvő lesz
+            sortBy = property;
+            sortAscending = true;
+        }
+
+        // Itt végezheted el a tényleges rendezést a Jobs kollekcióban
+        if (sortAscending)
+        {
+            Jobs = Jobs.OrderBy(j => GetPropertyValue(j, sortBy));
+        }
+        else
+        {
+            Jobs = Jobs.OrderByDescending(j => GetPropertyValue(j, sortBy));
+        }
+    }
+
+    private object GetPropertyValue(Job job, string property)
+    {
+        // Az adott property értékének lekérése a Job objektumból reflexió segítségével
+        return job.GetType().GetProperty(property)?.GetValue(job, null);
+    }
+
 }

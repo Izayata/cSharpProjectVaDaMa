@@ -1,6 +1,7 @@
 ﻿using Beadando.Contract;
 using System.Net.Http.Json;
 
+
 namespace IrodaiKliensApp.Services
 {
 	public class JobService : IJobsService
