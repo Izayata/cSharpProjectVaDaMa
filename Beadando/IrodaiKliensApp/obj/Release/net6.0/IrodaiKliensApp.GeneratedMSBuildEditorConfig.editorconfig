@@ -1,0 +1,76 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = IrodaiKliensApp
+build_property.RootNamespace = IrodaiKliensApp
+<<<<<<< HEAD
+build_property.ProjectDir = D:\C# projekt\Feladat\Beadando\IrodaiKliensApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\C# projekt\Feladat\Beadando\IrodaiKliensApp
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/C\# projekt/Feladat/Beadando/IrodaiKliensApp/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\# projekt/Feladat/Beadando/IrodaiKliensApp/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\# projekt/Feladat/Beadando/IrodaiKliensApp/Pages/JobDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9iRGV0YWlscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\# projekt/Feladat/Beadando/IrodaiKliensApp/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\# projekt/Feladat/Beadando/IrodaiKliensApp/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\# projekt/Feladat/Beadando/IrodaiKliensApp/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-73ny9eslfh
+
+[D:/C\# projekt/Feladat/Beadando/IrodaiKliensApp/Shared/NavMenu.razor]
+=======
+build_property.ProjectDir = C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\IrodaiKliensApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\IrodaiKliensApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/IrodaiKliensApp/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/IrodaiKliensApp/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/IrodaiKliensApp/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/IrodaiKliensApp/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/IrodaiKliensApp/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-73ny9eslfh
+
+[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/IrodaiKliensApp/Shared/NavMenu.razor]
+>>>>>>> 4c327682f746f9c4f0f7a1dfac25c5821f187563
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-aucfk85z3f

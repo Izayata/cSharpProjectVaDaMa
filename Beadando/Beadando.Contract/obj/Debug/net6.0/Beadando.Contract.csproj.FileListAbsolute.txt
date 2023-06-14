@@ -1,0 +1,12 @@
+D:\C# projekt\Feladat\Beadando\Beadando.Contract\bin\Debug\net6.0\Beadando.Contract.deps.json
+D:\C# projekt\Feladat\Beadando\Beadando.Contract\bin\Debug\net6.0\Beadando.Contract.dll
+D:\C# projekt\Feladat\Beadando\Beadando.Contract\bin\Debug\net6.0\Beadando.Contract.pdb
+D:\C# projekt\Feladat\Beadando\Beadando.Contract\obj\Debug\net6.0\Beadando.Contract.csproj.AssemblyReference.cache
+D:\C# projekt\Feladat\Beadando\Beadando.Contract\obj\Debug\net6.0\Beadando.Contract.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# projekt\Feladat\Beadando\Beadando.Contract\obj\Debug\net6.0\Beadando.Contract.AssemblyInfoInputs.cache
+D:\C# projekt\Feladat\Beadando\Beadando.Contract\obj\Debug\net6.0\Beadando.Contract.AssemblyInfo.cs
+D:\C# projekt\Feladat\Beadando\Beadando.Contract\obj\Debug\net6.0\Beadando.Contract.csproj.CoreCompileInputs.cache
+D:\C# projekt\Feladat\Beadando\Beadando.Contract\obj\Debug\net6.0\Beadando.Contract.dll
+D:\C# projekt\Feladat\Beadando\Beadando.Contract\obj\Debug\net6.0\refint\Beadando.Contract.dll
+D:\C# projekt\Feladat\Beadando\Beadando.Contract\obj\Debug\net6.0\Beadando.Contract.pdb
+D:\C# projekt\Feladat\Beadando\Beadando.Contract\obj\Debug\net6.0\ref\Beadando.Contract.dll
