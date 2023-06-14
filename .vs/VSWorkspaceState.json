@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Beadando",
+    "\\Beadando\\Beadando.Contract"
   ],
-  "SelectedNode": "\\C:\\Users\\Broxigar\\Source\\Repos\\cSharpProjectVaDaMa",
+  "SelectedNode": "\\Beadando\\Beadando.Contract\\JobStatus.cs",
   "PreviewInSolutionExplorer": false
 }
