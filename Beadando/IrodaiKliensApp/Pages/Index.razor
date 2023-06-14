@@ -2,7 +2,7 @@
 @using Beadando.Contract;
 @inject HttpClient HttpClient
 
-@if (Repair is null)
+@if (Jobs is null)
 {
         <p>Loading...</p>
 }
@@ -18,37 +18,33 @@ else
                     <th>Gyártási év</th>
                     <th>Munka kategória</th>
                     <th>Az autó hibájának rövid leírásaa</th>
+                    <th>Munkaóra esztimáció</th>
                     <th>A hiba súlyossága (1-10)</th>
                 </tr>
             </thead>
             <tbody>
-            @foreach (var repair in Repair)
+            @foreach (var job in Jobs)
             {
-                        <tr>
-                            <td>@repair.CustomerName</td>
-                            <td>@repair.CarType</td>                    
-                            <td>@repair.PlateNumber</td>
-                            <td>@repair.CarYear</td>
-                            <td>@repair.RepairCategory</td>
-                            <td>@repair.ShortDescription</td>
-                            <td>@repair.Priority</td>
-                        </tr>
+                <tr>
+                    <td>@job.ClientName</td>
+                    <td>@job.CarType</td>                    
+                    <td>@job.LicensePlateNumber</td>
+                    <td>@job.ManufacturingYear</td>
+                    <td>@job.Category</td>
+                    <td>@job.Description</td>
+                    <td>@job.ManHourEstimation</td>
+                    <td>@job.Status</td>
+                </tr>
             }
             </tbody>
         </table>
 }
 
-@code {/*
-    private IEnumerable<Repair> Repair { get; set; }
+@code {
+    private IEnumerable<Job> Jobs { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
-        Repair = await HttpClient.GetFromJsonAsync<IEnumerable<Repair>>("Repair");
-    }*/
+        Jobs = await HttpClient.GetFromJsonAsync<IEnumerable<Job>>("Jobs");
+    }
 }
-
-
-
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
