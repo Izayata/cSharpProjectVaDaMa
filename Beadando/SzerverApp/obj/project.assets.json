@@ -91,6 +91,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Beadando.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Beadando.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Beadando.Contract.dll": {}
+        }
       }
     }
   },
@@ -244,28 +254,39 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Beadando.Contract/1.0.0": {
+      "type": "project",
+      "path": "../Beadando.Contract/Beadando.Contract.csproj",
+      "msbuildProject": "../Beadando.Contract/Beadando.Contract.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Beadando.Contract >= 1.0.0",
       "StyleCop.Analyzers >= 1.1.118",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tarad\\.nuget\\packages\\": {}
+    "C:\\Users\\Broxigar\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C# projekt\\Feladat\\Beadando\\SzerverApp\\SzerverApp.csproj",
+      "projectUniqueName": "C:\\Users\\Broxigar\\source\\repos\\cSharpProjectVaDaMa\\Beadando\\SzerverApp\\SzerverApp.csproj",
       "projectName": "SzerverApp",
-      "projectPath": "D:\\C# projekt\\Feladat\\Beadando\\SzerverApp\\SzerverApp.csproj",
-      "packagesPath": "C:\\Users\\tarad\\.nuget\\packages\\",
-      "outputPath": "D:\\C# projekt\\Feladat\\Beadando\\SzerverApp\\obj\\",
+      "projectPath": "C:\\Users\\Broxigar\\source\\repos\\cSharpProjectVaDaMa\\Beadando\\SzerverApp\\SzerverApp.csproj",
+      "packagesPath": "C:\\Users\\Broxigar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Broxigar\\source\\repos\\cSharpProjectVaDaMa\\Beadando\\SzerverApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\tarad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Broxigar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -273,12 +294,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Broxigar\\source\\repos\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj": {
+              "projectPath": "C:\\Users\\Broxigar\\source\\repos\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -321,7 +348,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
