@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IrodaiKliensApp", "IrodaiKl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SzereloKliensApp", "SzereloKliensApp\SzereloKliensApp.csproj", "{5C53B6D4-4A3D-4850-A927-8FE6C9738C6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beadando.Contract", "Beadando.Contract\Beadando.Contract.csproj", "{443B6E44-0D03-46B3-9112-9AC3068FCADD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beadando.Contract", "Beadando.Contract\Beadando.Contract.csproj", "{443B6E44-0D03-46B3-9112-9AC3068FCADD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
