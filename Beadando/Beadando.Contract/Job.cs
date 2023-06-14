@@ -28,6 +28,8 @@ namespace Beadando.Contract
         public JobCategory Category { get; set; }
 
         [Required]
+        public int Severity { get; set; }
+
         public double ManHourEstimation { get; set; }
 
         [Required]

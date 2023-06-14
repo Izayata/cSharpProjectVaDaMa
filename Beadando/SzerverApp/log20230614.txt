@@ -100,3 +100,10 @@ VALUES (N'20230614200334_initial', N'6.0.16');
 2023-06-14 22:03:59.324 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.8876ms
 2023-06-14 22:03:59.608 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/v1/swagger.json - -
 2023-06-14 22:03:59.631 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 22.9667ms
+2023-06-14 22:18:12.488 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/_framework/aspnetcore-browser-refresh.js - -
+2023-06-14 22:18:12.490 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 1.7541ms
+2023-06-14 22:18:12.671 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/favicon-16x16.png - -
+2023-06-14 22:18:12.684 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2023-06-14 22:18:12.685 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/favicon-16x16.png - - - 0 665 image/png 14.5838ms
+2023-06-14 22:18:12.786 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/v1/swagger.json - -
+2023-06-14 22:18:12.788 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.5986ms

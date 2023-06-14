@@ -11,7 +11,7 @@ using SzerverApp;
 namespace SzerverApp.Migrations
 {
     [DbContext(typeof(BeadandoContext))]
-    [Migration("20230614200334_initial")]
+    [Migration("20230614224605_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -54,6 +54,9 @@ namespace SzerverApp.Migrations
                         .HasColumnType("float");
 
                     b.Property<int>("ManufacturingYear")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Severity")
                         .HasColumnType("int");
 
                     b.Property<int>("Status")

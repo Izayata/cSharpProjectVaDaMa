@@ -54,6 +54,9 @@ namespace SzerverApp.Migrations
                     b.Property<int>("ManufacturingYear")
                         .HasColumnType("int");
 
+                    b.Property<int>("Severity")
+                        .HasColumnType("int");
+
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
