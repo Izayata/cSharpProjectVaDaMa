@@ -1,6 +1,8 @@
 ﻿@page "/"
 @using Beadando.Contract;
-@inject IJobService JobService
+@using IrodaiKliensApp.Services
+@inject IJobsService JobService
+
 
 @if (Jobs is null)
 {
@@ -15,6 +17,11 @@ else
                     <th>Ügyfél neve</th>
                     <th>Autó típusa</th>
                     <th>Autó rendszáma</th>
+                    <th>Gyártási év</th>
+                    <th>Munka kategória</th>
+                    <th>Az autó hibájának rövid leírásaa</th>
+                    <th>Munkaóra esztimáció</th>
+                    <th>A hiba súlyossága (1-10)</th>
                     <th></th>
                 </tr>
             </thead>
@@ -23,13 +30,22 @@ else
             {
                 <tr>
                     <td>@job.ClientName</td>
-                    <td>@job.CarType</td>                    
-							<td>@job.LicensePlateNumber</td>  <td><a href="jobs/@job.Id" class="btn bth-primary">Details</a> </td>
+                    <td>@job.CarType</td>          
+					<td>@job.LicensePlateNumber</td>
+                    <td>@job.ManufacturingYear</td>
+                    <td>@job.Category</td>
+                    <td>@job.Description</td>
+                    <td>@job.ManHourEstimation</td>
+                    <td>@job.Status</td>
 
                 </tr>
+
             }
             </tbody>
-        </table>        
+        </table>      
+        
+        <div><a href="/" class="btn bth-primary">Reload</a> </div> 
+      
 }
 
 @code {
@@ -37,18 +53,6 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        Jobs = await HttpClient.GetFromJsonAsync<IEnumerable<Job>>("Jobs");
+        Jobs = await JobService.GetAllJobAsync();
     }
-    /*                    <th>Gyártási év</th>
-                    <th>Munka kategória</th>
-                    <th>Az autó hibájának rövid leírásaa</th>
-                    <th>Munkaóra esztimáció</th>
-                    <th>A hiba súlyossága (1-10)</th>
-
-                      <td>@job.ManufacturingYear</td>
-                    <td>@job.Category</td>
-                    <td>@job.Description</td>
-                    <td>@job.ManHourEstimation</td>
-                    <td>@job.Status</td>
-    */
 }

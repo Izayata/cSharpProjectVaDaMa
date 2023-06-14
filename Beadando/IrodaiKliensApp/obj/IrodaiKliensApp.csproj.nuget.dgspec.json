@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C# projekt\\Feladat\\Beadando\\IrodaiKliensApp\\IrodaiKliensApp.csproj": {}
+    "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\Beadando\\IrodaiKliensApp\\IrodaiKliensApp.csproj": {}
   },
   "projects": {
-    "D:\\C# projekt\\Feladat\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj": {
+    "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C# projekt\\Feladat\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj",
+        "projectUniqueName": "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj",
         "projectName": "Beadando.Contract",
-        "projectPath": "D:\\C# projekt\\Feladat\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj",
+        "projectPath": "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj",
         "packagesPath": "C:\\Users\\tarad\\.nuget\\packages\\",
-        "outputPath": "D:\\C# projekt\\Feladat\\Beadando\\Beadando.Contract\\obj\\",
+        "outputPath": "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tarad\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -67,14 +67,14 @@
         }
       }
     },
-    "D:\\C# projekt\\Feladat\\Beadando\\IrodaiKliensApp\\IrodaiKliensApp.csproj": {
+    "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\Beadando\\IrodaiKliensApp\\IrodaiKliensApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C# projekt\\Feladat\\Beadando\\IrodaiKliensApp\\IrodaiKliensApp.csproj",
+        "projectUniqueName": "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\Beadando\\IrodaiKliensApp\\IrodaiKliensApp.csproj",
         "projectName": "IrodaiKliensApp",
-        "projectPath": "D:\\C# projekt\\Feladat\\Beadando\\IrodaiKliensApp\\IrodaiKliensApp.csproj",
+        "projectPath": "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\Beadando\\IrodaiKliensApp\\IrodaiKliensApp.csproj",
         "packagesPath": "C:\\Users\\tarad\\.nuget\\packages\\",
-        "outputPath": "D:\\C# projekt\\Feladat\\Beadando\\IrodaiKliensApp\\obj\\",
+        "outputPath": "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\Beadando\\IrodaiKliensApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tarad\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -91,8 +91,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\C# projekt\\Feladat\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj": {
-                "projectPath": "D:\\C# projekt\\Feladat\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj"
+              "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj": {
+                "projectPath": "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj"
               }
             }
           }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c4dkJzif8dOlzX9OUqYxOy9BUOKr3+Jh/Tk0E0alXBlSq5fa+Go5D1emyI6pHPkYW+RNwAfHumXmgcYjUriIAw==",
+  "dgSpecHash": "h68RiNRvZLp36osywlwNZQm4sz6pReOchOuXF1QwIaoQySwYBYBqrxQLwGEAzte8ew5HIqgSdmE3yV8RK2Oexw==",
   "success": true,
-  "projectFilePath": "D:\\C# projekt\\Feladat\\Beadando\\IrodaiKliensApp\\IrodaiKliensApp.csproj",
+  "projectFilePath": "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\Beadando\\IrodaiKliensApp\\IrodaiKliensApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tarad\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.15\\microsoft.aspnetcore.authorization.6.0.15.nupkg.sha512",
     "C:\\Users\\tarad\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.15\\microsoft.aspnetcore.components.6.0.15.nupkg.sha512",
