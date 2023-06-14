@@ -1,5 +1,4 @@
 ﻿using Beadando.Contract;
-using System;
 
 namespace SzerverApp
 {

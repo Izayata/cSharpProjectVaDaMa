@@ -1,0 +1,12 @@
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\Beadando.Contract\bin\Debug\net6.0\Beadando.Contract.deps.json
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\Beadando.Contract\bin\Debug\net6.0\Beadando.Contract.dll
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\Beadando.Contract\bin\Debug\net6.0\Beadando.Contract.pdb
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\Beadando.Contract\obj\Debug\net6.0\Beadando.Contract.csproj.AssemblyReference.cache
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\Beadando.Contract\obj\Debug\net6.0\Beadando.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\Beadando.Contract\obj\Debug\net6.0\Beadando.Contract.AssemblyInfoInputs.cache
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\Beadando.Contract\obj\Debug\net6.0\Beadando.Contract.AssemblyInfo.cs
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\Beadando.Contract\obj\Debug\net6.0\Beadando.Contract.csproj.CoreCompileInputs.cache
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\Beadando.Contract\obj\Debug\net6.0\Beadando.Contract.dll
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\Beadando.Contract\obj\Debug\net6.0\refint\Beadando.Contract.dll
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\Beadando.Contract\obj\Debug\net6.0\Beadando.Contract.pdb
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\Beadando.Contract\obj\Debug\net6.0\ref\Beadando.Contract.dll

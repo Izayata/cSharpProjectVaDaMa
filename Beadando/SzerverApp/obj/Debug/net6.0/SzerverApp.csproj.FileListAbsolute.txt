@@ -30,3 +30,37 @@ D:\C# projekt\Feladat\Beadando\SzerverApp\obj\Debug\net6.0\refint\SzerverApp.dll
 D:\C# projekt\Feladat\Beadando\SzerverApp\obj\Debug\net6.0\SzerverApp.pdb
 D:\C# projekt\Feladat\Beadando\SzerverApp\obj\Debug\net6.0\SzerverApp.genruntimeconfig.cache
 D:\C# projekt\Feladat\Beadando\SzerverApp\obj\Debug\net6.0\ref\SzerverApp.dll
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\bin\Debug\net6.0\appsettings.json
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\bin\Debug\net6.0\SzerverApp.exe
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\bin\Debug\net6.0\SzerverApp.deps.json
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\bin\Debug\net6.0\SzerverApp.runtimeconfig.json
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\bin\Debug\net6.0\SzerverApp.dll
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\bin\Debug\net6.0\SzerverApp.pdb
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\bin\Debug\net6.0\Beadando.Contract.dll
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\bin\Debug\net6.0\Beadando.Contract.pdb
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\SzerverApp.csproj.AssemblyReference.cache
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\SzerverApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\SzerverApp.AssemblyInfoInputs.cache
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\SzerverApp.AssemblyInfo.cs
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\SzerverApp.csproj.CoreCompileInputs.cache
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\SzerverApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\SzerverApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\staticwebassets\msbuild.SzerverApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\staticwebassets\msbuild.build.SzerverApp.props
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.SzerverApp.props
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.SzerverApp.props
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\scopedcss\bundle\SzerverApp.styles.css
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\SzerverApp.csproj.CopyComplete
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\SzerverApp.dll
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\refint\SzerverApp.dll
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\SzerverApp.pdb
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\SzerverApp.genruntimeconfig.cache
+C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\obj\Debug\net6.0\ref\SzerverApp.dll
