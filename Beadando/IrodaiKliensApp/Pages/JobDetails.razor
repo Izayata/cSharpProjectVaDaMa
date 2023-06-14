@@ -1,7 +1,17 @@
 ﻿@page "/jobs/{id:int}"
+@using Beadando.Contract;
+
 <h3>JobDetails</h3>
 
 @code {
 	[Parameter]
 	public int Id { get; set; }
+
+	private Job Job { get; set; }
+
+	protected override async Task OnInitializedAsync()
+	{
+		
+	}
+
 }
