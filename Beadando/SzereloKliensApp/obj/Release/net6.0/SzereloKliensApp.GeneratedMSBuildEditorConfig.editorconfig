@@ -9,6 +9,7 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = SzereloKliensApp
 build_property.RootNamespace = SzereloKliensApp
+<<<<<<< HEAD
 build_property.ProjectDir = D:\C# projekt\Feladat\Beadando\SzereloKliensApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
@@ -45,5 +46,43 @@ build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-rxtztfqgf7
 
 [D:/C\# projekt/Feladat/Beadando/SzereloKliensApp/Shared/NavMenu.razor]
+=======
+build_property.ProjectDir = C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzereloKliensApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzereloKliensApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/SzereloKliensApp/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/SzereloKliensApp/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/SzereloKliensApp/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/SzereloKliensApp/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/SzereloKliensApp/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/SzereloKliensApp/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/SzereloKliensApp/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-rxtztfqgf7
+
+[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/SzereloKliensApp/Shared/NavMenu.razor]
+>>>>>>> 4c327682f746f9c4f0f7a1dfac25c5821f187563
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-sf93dn99j4

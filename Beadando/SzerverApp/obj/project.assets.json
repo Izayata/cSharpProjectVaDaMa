@@ -91,6 +91,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Beadando.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Beadando.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Beadando.Contract.dll": {}
+        }
       }
     }
   },
@@ -244,10 +254,16 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Beadando.Contract/1.0.0": {
+      "type": "project",
+      "path": "../Beadando.Contract/Beadando.Contract.csproj",
+      "msbuildProject": "../Beadando.Contract/Beadando.Contract.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Beadando.Contract >= 1.0.0",
       "StyleCop.Analyzers >= 1.1.118",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
@@ -278,7 +294,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\C# projekt\\Feladat\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj": {
+              "projectPath": "D:\\C# projekt\\Feladat\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
