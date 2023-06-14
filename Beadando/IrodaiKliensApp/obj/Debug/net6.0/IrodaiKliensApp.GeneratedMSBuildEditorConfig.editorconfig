@@ -9,41 +9,33 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = IrodaiKliensApp
 build_property.RootNamespace = IrodaiKliensApp
-build_property.ProjectDir = C:\Users\Broxigar\Source\Repos\cSharpProjectVaDaMa\Beadando\IrodaiKliensApp\
+build_property.ProjectDir = D:\C# projekt\Feladat\Beadando\IrodaiKliensApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Broxigar\Source\Repos\cSharpProjectVaDaMa\Beadando\IrodaiKliensApp
+build_property.MSBuildProjectDirectory = D:\C# projekt\Feladat\Beadando\IrodaiKliensApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Broxigar/Source/Repos/cSharpProjectVaDaMa/Beadando/IrodaiKliensApp/App.razor]
+[D:/C\# projekt/Feladat/Beadando/IrodaiKliensApp/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Broxigar/Source/Repos/cSharpProjectVaDaMa/Beadando/IrodaiKliensApp/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Broxigar/Source/Repos/cSharpProjectVaDaMa/Beadando/IrodaiKliensApp/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Broxigar/Source/Repos/cSharpProjectVaDaMa/Beadando/IrodaiKliensApp/Pages/Index.razor]
+[D:/C\# projekt/Feladat/Beadando/IrodaiKliensApp/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Broxigar/Source/Repos/cSharpProjectVaDaMa/Beadando/IrodaiKliensApp/Shared/SurveyPrompt.razor]
+[D:/C\# projekt/Feladat/Beadando/IrodaiKliensApp/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Broxigar/Source/Repos/cSharpProjectVaDaMa/Beadando/IrodaiKliensApp/_Imports.razor]
+[D:/C\# projekt/Feladat/Beadando/IrodaiKliensApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Broxigar/Source/Repos/cSharpProjectVaDaMa/Beadando/IrodaiKliensApp/Shared/MainLayout.razor]
+[D:/C\# projekt/Feladat/Beadando/IrodaiKliensApp/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-73ny9eslfh
 
-[C:/Users/Broxigar/Source/Repos/cSharpProjectVaDaMa/Beadando/IrodaiKliensApp/Shared/NavMenu.razor]
+[D:/C\# projekt/Feladat/Beadando/IrodaiKliensApp/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-aucfk85z3f

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "itnZtyZfCxgOH4hp/idYq7K9G6RQN6iHh++RSReoS3/1ww/Ioxle3sDxr89L9tW2bXqRFuNdOUJ/qL1l4lNuag==",
+  "dgSpecHash": "FV0MEQsVL8yAHrbUCx4eXjzPJw6+mFbW4S2HMwhsNonsWHGUxUwMp62w4pM/4/NS1/t2R8j53QDZwRQ3QgHPRw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Broxigar\\source\\repos\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj",
+  "projectFilePath": "D:\\C# projekt\\Feladat\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Broxigar\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+    "C:\\Users\\tarad\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
   ],
   "logs": []
 }

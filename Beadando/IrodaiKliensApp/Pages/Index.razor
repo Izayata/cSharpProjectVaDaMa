@@ -1,8 +1,53 @@
 ﻿@page "/"
+@using Beadando.Contract;
+@inject HttpClient HttpClient
 
-<PageTitle>Index</PageTitle>
+@if (Repair is null)
+{
+        <p>Loading...</p>
+}
+else
+{
+        <h3>Szerelések</h3>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Ügyfél neve</th>
+                    <th>Autó típusa</th>
+                    <th>Autó rendszáma</th>
+                    <th>Gyártási év</th>
+                    <th>Munka kategória</th>
+                    <th>Az autó hibájának rövid leírásaa</th>
+                    <th>A hiba súlyossága (1-10)</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var repair in Repair)
+            {
+                        <tr>
+                            <td>@repair.CustomerName</td>
+                            <td>@repair.CarType</td>                    
+                            <td>@repair.PlateNumber</td>
+                            <td>@repair.CarYear</td>
+                            <td>@repair.RepairCategory</td>
+                            <td>@repair.ShortDescription</td>
+                            <td>@repair.Priority</td>
+                        </tr>
+            }
+            </tbody>
+        </table>
+}
 
-<h1>Hello, world!</h1>
+@code {/*
+    private IEnumerable<Repair> Repair { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Repair = await HttpClient.GetFromJsonAsync<IEnumerable<Repair>>("Repair");
+    }*/
+}
+
+
 
 Welcome to your new app.
 
