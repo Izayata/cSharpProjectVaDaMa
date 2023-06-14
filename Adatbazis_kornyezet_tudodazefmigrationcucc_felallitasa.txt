@@ -1,0 +1,18 @@
+Visual Studio 2022 EF környezet
+
+A fejlesztőkörnyezetben nyiss meg egy terminált (View -> Terminal) és a solution-ből lépj be a projektbe (aminek elnevezted)
+
+I. Környezet Felállítása
+------------------------
+1) dotnet tool install -g dotnet-ef					--> Eszközcsomag telepítése
+2) dotnet tool list -g								--> Ezzel tudod kilistázni a telepített eszközcsomagokat
+3) dotnet migrations add name_of_your_migration		--> Migrációs fájl létrehozása (Ez alapján fog lefutni a négyes pontban található sor)
+4) dotnet ef database update						--> Adatbázis létrehozása/Működési logikájának frissítése
+
+II. Ha elromlik a DB
+--------------------
+1) dotnet ef migrations remove 					--> 1 db migrációs fájl eldobása (Addig csináld, amíg létezik ilyen fájl)
+2) dotnet ef database drop -f					--> Tábla eldobása
+3) dotnet ef database update					--> Tábla eldobásának véglegesítése
+4) dotnet migrations add name_of_your_migration --> Migrációs fájl létrehozása (Ez alapján fog lefutni a négyes pontban található sor)
+5) dotnet ef database update					--> Tábla létrehozás
