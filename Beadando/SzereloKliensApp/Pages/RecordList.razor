@@ -26,7 +26,7 @@ else
             @foreach (var job in Jobs)
             {
                 <tr>
-                    <td>@job.ClientName</td>
+                    <td>@job.ClientLastName @job.ClientFirstName</td>
                     <td>@job.CarType</td>
                     <td>@job.LicensePlateNumber</td>
                     <td>@job.ManufacturingYear</td>
@@ -45,4 +45,9 @@ else
 
 @code {
     private IEnumerable<Job> Jobs { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Jobs = await JobService.GetAllJobAsync();
+    }
 }

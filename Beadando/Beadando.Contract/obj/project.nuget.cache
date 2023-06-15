@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "itnZtyZfCxgOH4hp/idYq7K9G6RQN6iHh++RSReoS3/1ww/Ioxle3sDxr89L9tW2bXqRFuNdOUJ/qL1l4lNuag==",
+  "dgSpecHash": "mHD62Xw6NZP0VAB0g0TY5ByiQTqiOjvbag8INyzy2CJsva7b8w5EAQVSPaKFTkKlQ+dMUBFUO/DkFYoYoxR7qA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Broxigar\\source\\repos\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj",
+  "projectFilePath": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Broxigar\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+    "C:\\Users\\moonw\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
   ],
   "logs": []
 }
