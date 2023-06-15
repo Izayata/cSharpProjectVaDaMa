@@ -1820,19 +1820,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tarad\\.nuget\\packages\\": {}
+    "C:\\Users\\Broxigar\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\Beadando\\IrodaiKliensApp\\IrodaiKliensApp.csproj",
+      "projectUniqueName": "C:\\Users\\Broxigar\\source\\repos\\cSharpProjectVaDaMa\\Beadando\\IrodaiKliensApp\\IrodaiKliensApp.csproj",
       "projectName": "IrodaiKliensApp",
-      "projectPath": "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\Beadando\\IrodaiKliensApp\\IrodaiKliensApp.csproj",
-      "packagesPath": "C:\\Users\\tarad\\.nuget\\packages\\",
-      "outputPath": "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\Beadando\\IrodaiKliensApp\\obj\\",
+      "projectPath": "C:\\Users\\Broxigar\\source\\repos\\cSharpProjectVaDaMa\\Beadando\\IrodaiKliensApp\\IrodaiKliensApp.csproj",
+      "packagesPath": "C:\\Users\\Broxigar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Broxigar\\source\\repos\\cSharpProjectVaDaMa\\Beadando\\IrodaiKliensApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\tarad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Broxigar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1840,14 +1845,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj": {
-              "projectPath": "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj"
+            "C:\\Users\\Broxigar\\source\\repos\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj": {
+              "projectPath": "C:\\Users\\Broxigar\\source\\repos\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj"
             }
           }
         }
@@ -1892,7 +1898,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-            "version": "[6.0.13, 6.0.13]"
+            "version": "[6.0.16, 6.0.16]"
           }
         ],
         "frameworkReferences": {
@@ -1900,7 +1906,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

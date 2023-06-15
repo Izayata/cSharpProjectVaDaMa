@@ -9,6 +9,7 @@
       "SzerverApp/1.0.0": {
         "dependencies": {
           "Beadando.Contract": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.16",
           "Microsoft.EntityFrameworkCore.Proxies": "6.0.16",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.16",
