@@ -158,8 +158,7 @@ namespace SzerverApp.Controllers
             }
 
             Regex rgx = new Regex("[A-Z]{3}-[0-9]{3}");
-            if (!rgx.IsMatch(job.LicensePlateNumber))
-            {
+            if (!rgx.IsMatch(job.LicensePlateNumber)) {
                 return false;
             }
 

@@ -11,13 +11,8 @@ using SzerverApp;
 namespace SzerverApp.Migrations
 {
     [DbContext(typeof(BeadandoContext))]
-<<<<<<<< HEAD:Beadando/SzerverApp/Migrations/20230615172420_init.Designer.cs
     [Migration("20230615172420_init")]
     partial class init
-========
-    [Migration("20230615151407_initial")]
-    partial class initial
->>>>>>>> szereloKliens:Beadando/SzerverApp/Migrations/20230615151407_initial.Designer.cs
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
