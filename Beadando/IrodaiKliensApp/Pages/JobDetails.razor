@@ -18,32 +18,43 @@ else
                 <ValidationSummary />
                 <div class="mb-3">
                     <label class="form-label">Client first name</label>
-                    <InputText @bind-Value="@Job.ClientFirstName" class="form-control"/>
+                    <InputText @bind-Value="@Job.ClientFirstName" class="form-control" aria-describedby="firstNameHelp"/>
+                    <ValidationMessage For="@(() => Job.ClientFirstName)" />
                 </div>
                     <div class="mb-3">
                     <label class="form-label">Client last name</label>
                     <InputText @bind-Value="@Job.ClientLastName" class="form-control"/>
+                    <ValidationMessage For="@(() => Job.ClientLastName)" />
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Car Type</label>
                     <InputText @bind-Value="@Job.CarType" class="form-control"/>
+                        <ValidationMessage For="@(() => Job.CarType)" />
                 </div>
                 <div class="mb-3">
                     <label class="form-label">LicensePlateNumber</label>
                     <InputText @bind-Value="@Job.LicensePlateNumber" class="form-control" />
+                        <ValidationMessage For="@(() => Job.LicensePlateNumber)" />
                 </div>
                 <div class="mb-3">
                     <label class="form-label">ManufacturingYear</label>
                     <InputNumber @bind-Value="@Job.ManufacturingYear" class="form-control" />
+                        <ValidationMessage For="@(() => Job.ManufacturingYear)" />
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Description</label>
                     <InputText @bind-Value="@Job.Description" class="form-control" />
+                        <ValidationMessage For="@(() => Job.Description)" />
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Category</label>
-                    <InputSelect @bind-Value="@Job.Category" class="form-control" />
+                    <InputSelect @bind-Value="@Job.Category" class="form-control">
+                        <option value="0"> Body </option>
+                        <option value="1"> Engine </option>
+                        <option value="2"> Undercarriage </option>
+                        <option value="3"> Brakes </option>
+                    </InputSelect>
                 </div>
 
                 <button type="submit" class="btn btn-primary form-control mb-3">Save Changes</button>
