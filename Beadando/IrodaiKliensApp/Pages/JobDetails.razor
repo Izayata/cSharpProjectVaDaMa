@@ -13,51 +13,41 @@ else
         <h3>@Job.ClientFirstName's details</h3>
 
 
-        <EditForm Model="@Job" OnValidSubmit="@HandleValidSubmitAsync">
-            <DataAnnotationsValidator />
-            <ValidationSummary />
-            <div class="mb-3">
-                <label class="form-label">Client first name</label>
-                <InputText @bind-Value="@Job.ClientFirstName" class="form-control"/>
-            </div>
+            <EditForm Model="@Job" OnValidSubmit="@HandleValidSubmitAsync">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
                 <div class="mb-3">
-                <label class="form-label">Client last name</label>
-                <InputText @bind-Value="@Job.ClientLastName" class="form-control"/>
-            </div>
+                    <label class="form-label">Client first name</label>
+                    <InputText @bind-Value="@Job.ClientFirstName" class="form-control"/>
+                </div>
+                    <div class="mb-3">
+                    <label class="form-label">Client last name</label>
+                    <InputText @bind-Value="@Job.ClientLastName" class="form-control"/>
+                </div>
 
-            <div class="mb-3">
-                <label class="form-label">Car Type</label>
-                <InputText @bind-Value="@Job.CarType" class="form-control"/>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">LicensePlateNumber</label>
-                <InputText @bind-Value="@Job.LicensePlateNumber" class="form-control" />
-            </div>
-            <div class="mb-3">
-                <label class="form-label">ManufacturingYear</label>
-                <InputDate @bind-Value="@Job.ManufacturingYear" class="form-control" />
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Description</label>
-                <InputDate @bind-Value="@Job.Description" class="form-control" />
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Category</label>
-                <InputDate @bind-Value="@Job.Category" class="form-control" />
-            </div>
-            <div class="mb-3">
-                <label class="form-label">ManHourEstimation</label>
-                <InputDate @bind-Value="@Job.ManHourEstimation" class="form-control" />
-            </div>
-            <div class="mb-3">
-                    <label class="form-label">Status</label>
-                    <InputDate @bind-Value="@Job.Status" class="form-control" />
-            </div>
+                <div class="mb-3">
+                    <label class="form-label">Car Type</label>
+                    <InputText @bind-Value="@Job.CarType" class="form-control"/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">LicensePlateNumber</label>
+                    <InputText @bind-Value="@Job.LicensePlateNumber" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">ManufacturingYear</label>
+                    <InputNumber @bind-Value="@Job.ManufacturingYear" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Description</label>
+                    <InputText @bind-Value="@Job.Description" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Category</label>
+                    <InputSelect @bind-Value="@Job.Category" class="form-control" />
+                </div>
 
-
-
-            <button type="submit" class="btn btn-primary form-control mb-3">Save Changes</button>
-        </EditForm>
+                <button type="submit" class="btn btn-primary form-control mb-3">Save Changes</button>
+            </EditForm>
 
         <button @onclick="@HandleDeleteAsync" class="btn btn-danger form-control">Delete</button>
 }
@@ -67,7 +57,7 @@ else
     public int Id { get; set; }
 
     private Job? Job { get; set; }
-
+     
     protected override async Task OnInitializedAsync()
     {
         Job = await JobService.GetJobsByIdAsync(Id);
