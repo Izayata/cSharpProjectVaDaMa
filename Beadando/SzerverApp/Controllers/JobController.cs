@@ -139,30 +139,6 @@ namespace SzerverApp.Controllers
                 return false;
             }
 
-            /*job.ClientFirstName = ValidateString(job.ClientFirstName);
-            if (job.ClientFirstName.IsNullOrEmpty())
-            {
-                return false;
-            }
-
-            job.ClientLastName = ValidateString(job.ClientLastName);
-            if (job.ClientLastName.IsNullOrEmpty())
-            {
-                return false;
-            }
-
-            job.CarType = ValidateString(job.CarType);
-            if (job.CarType.IsNullOrEmpty())
-            {
-                return false;
-            }
-
-            Regex rgx = new Regex("[A-Z]{3}-[0-9]{3}");
-            if (!rgx.IsMatch(job.LicensePlateNumber)) {
-                return false;
-            }
-
-            */
             if (DateTime.Now.Year < job.ManufacturingYear)
             {
                 return false;
@@ -179,14 +155,6 @@ namespace SzerverApp.Controllers
             }
 
             return true;
-        }
-
-        private static string ValidateString(string str)
-        {
-            Regex rgx = new Regex("[^a-zA-Z0-9]");
-            str = rgx.Replace(str, "");
-
-            return str;
         }
 
         private static double ManHourEstimation(Job job)

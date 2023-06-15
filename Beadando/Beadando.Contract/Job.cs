@@ -5,23 +5,24 @@ namespace Beadando.Contract
 {
     public class Job
     {
+
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Client First Name Required!")]
-        [RegularExpression(@"[^a-zA-Z0-9]", ErrorMessage = "Invalid Client First Name Format!")]
+        [RegularExpression(@"[^a-zA-Z0-9]+", ErrorMessage = "Invalid Client First Name Format!")]
         [MaxLength(15)]
         public string ClientFirstName { get; set; }
 
         [Required(ErrorMessage = "Client Last Name Required!")]
         [MaxLength(15)]
-        [RegularExpression(@"[^a-zA-Z0-9]", ErrorMessage = "Invalid Client Last Name Format!")]
+        [RegularExpression(@"[^a-zA-Z0-9]+", ErrorMessage = "Invalid Client Last Name Format!")]
         public string ClientLastName { get; set; }
 
         [Required(ErrorMessage = "Car Type Required!")]
         [MaxLength(20)]
-        [RegularExpression(@"[^a-zA-Z0-9]", ErrorMessage = "Invalid Car Type Format!")]
+        [RegularExpression(@"[^a-zA-Z0-9]+", ErrorMessage = "Invalid Car Type Format!")]
         public string CarType { get; set; }
 
         [Required(ErrorMessage = "License Plate Number Required!")]
@@ -42,8 +43,11 @@ namespace Beadando.Contract
         [Range(1, 10, ErrorMessage = "Severity must be in the range of 1 and 10")]
         public int Severity { get; set; }
 
+        [Range(0, DateTime.Now.Year)]
         public double ManHourEstimation { get; set; }
 
         public JobStatus Status { get; set; }
+
+
     }
 }
