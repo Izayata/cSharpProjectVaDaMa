@@ -162,6 +162,10 @@ namespace SzerverApp.Controllers
                 return false;
             }
 
+            if (DateTime.Now.Year < job.ManufacturingYear)
+            {
+                return false;
+            }
 
             if (!Enum.IsDefined(typeof(JobCategory), job.Category))
             {
