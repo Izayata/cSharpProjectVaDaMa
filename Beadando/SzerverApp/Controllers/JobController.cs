@@ -7,12 +7,12 @@ namespace SzerverApp.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class JobContoller : ControllerBase
+    public class JobController : ControllerBase
     {
         private readonly BeadandoContext _beadandoContext;
-        private readonly ILogger<JobContoller> _logger;
+        private readonly ILogger<JobController> _logger;
 
-        public JobContoller(BeadandoContext beadandoContext, ILogger<JobContoller> logger)
+        public JobController(BeadandoContext beadandoContext, ILogger<JobController> logger)
         {
             this._beadandoContext = beadandoContext;
             this._logger = logger;
@@ -40,13 +40,24 @@ namespace SzerverApp.Controllers
             return this.Ok(job);
         }
 
-        private double ManHourEstimation(Job job)
+        [HttpPost]
+        public async Task<IActionResult> Post([FromBody] Job job)
+        {
+
+            this._beadandoContext.Jobs.Add(job);
+            await this._beadandoContext.SaveChangesAsync();
+
+            return this.Ok();
+        }
+
+        private static double ManHourEstimation(Job job)
         {
             double jobCategoryValue = 0;
             double ageValue = 0;
-            double SeverityValue = 0;
+            double severityValue = 0;
 
-            switch (job.Category) {
+            switch (job.Category)
+            {
                 case JobCategory.Body:
                     jobCategoryValue = 3;
                     break;
@@ -85,26 +96,26 @@ namespace SzerverApp.Controllers
 
             if (severity >= 1 && severity <= 2)
             {
-                SeverityValue = 0.2;
+                severityValue = 0.2;
             }
             else if (severity >= 3 && severity <= 4)
             {
-                SeverityValue = 0.4;
+                severityValue = 0.4;
             }
             else if (severity >= 5 && severity <= 7)
             {
-                SeverityValue = 0.6;
+                severityValue = 0.6;
             }
             else if (severity >= 8 && severity <= 9)
             {
-                SeverityValue = 0.8;
+                severityValue = 0.8;
             }
             else if (severity == 10)
             {
-                SeverityValue = 1;
+                severityValue = 1;
             }
 
-            return jobCategoryValue * ageValue * SeverityValue;
+            return jobCategoryValue * ageValue * severityValue;
         }
 
     }

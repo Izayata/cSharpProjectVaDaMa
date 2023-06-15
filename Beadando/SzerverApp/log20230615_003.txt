@@ -250,3 +250,56 @@ FROM [Job] AS [j]
 2023-06-15 12:34:26.179 +02:00 [INF] Executed action SzerverApp.Controllers.JobContoller.Get (SzerverApp) in 11.5439ms
 2023-06-15 12:34:26.180 +02:00 [INF] Executed endpoint 'SzerverApp.Controllers.JobContoller.Get (SzerverApp)'
 2023-06-15 12:34:26.181 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/JobContoller - - - 200 - application/json;+charset=utf-8 20.0135ms
+2023-06-15 15:35:10.849 +02:00 [INF] Now listening on: https://localhost:5274
+2023-06-15 15:35:10.874 +02:00 [INF] Now listening on: http://localhost:5165
+2023-06-15 15:35:10.878 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-15 15:35:10.879 +02:00 [INF] Hosting environment: Development
+2023-06-15 15:35:10.880 +02:00 [INF] Content root path: D:\Tanulmányok\Egyetem\Debrecen\not_categorized\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\Projekt\cSharpProjectVaDaMa\Beadando\cSharpProjectVaDaMa\Beadando\SzerverApp\
+2023-06-15 15:35:12.407 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/index.html - -
+2023-06-15 15:35:12.683 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/index.html - - - 200 - text/html;charset=utf-8 278.6000ms
+2023-06-15 15:35:13.357 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/_framework/aspnetcore-browser-refresh.js - -
+2023-06-15 15:35:13.361 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/_framework/aspnetcore-browser-refresh.js - - - 200 11978 application/javascript;+charset=utf-8 3.9276ms
+2023-06-15 15:35:13.362 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/_vs/browserLink - -
+2023-06-15 15:35:13.440 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 78.5053ms
+2023-06-15 15:35:13.462 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/favicon-32x32.png - -
+2023-06-15 15:35:13.470 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-06-15 15:35:13.471 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/favicon-32x32.png - - - 0 628 image/png 9.2387ms
+2023-06-15 15:35:13.509 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/v1/swagger.json - -
+2023-06-15 15:35:13.584 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 74.6226ms
+2023-06-15 17:43:13.232 +02:00 [INF] Now listening on: https://localhost:5274
+2023-06-15 17:43:13.257 +02:00 [INF] Now listening on: http://localhost:5165
+2023-06-15 17:43:13.261 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-15 17:43:13.262 +02:00 [INF] Hosting environment: Development
+2023-06-15 17:43:13.262 +02:00 [INF] Content root path: D:\Tanulmányok\Egyetem\Debrecen\not_categorized\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\Projekt\cSharpProjectVaDaMa\Beadando\cSharpProjectVaDaMa\Beadando\SzerverApp\
+2023-06-15 17:43:13.385 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/index.html - -
+2023-06-15 17:43:13.581 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/index.html - - - 200 - text/html;charset=utf-8 198.2055ms
+2023-06-15 17:43:18.378 +02:00 [INF] Now listening on: https://localhost:5274
+2023-06-15 17:43:18.403 +02:00 [INF] Now listening on: http://localhost:5165
+2023-06-15 17:43:18.407 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-15 17:43:18.408 +02:00 [INF] Hosting environment: Development
+2023-06-15 17:43:18.409 +02:00 [INF] Content root path: D:\Tanulmányok\Egyetem\Debrecen\not_categorized\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\Projekt\cSharpProjectVaDaMa\Beadando\cSharpProjectVaDaMa\Beadando\SzerverApp\
+2023-06-15 17:43:18.528 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/_framework/aspnetcore-browser-refresh.js - -
+2023-06-15 17:43:18.528 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/_vs/browserLink - -
+2023-06-15 17:43:18.535 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/_framework/aspnetcore-browser-refresh.js - - - 200 11978 application/javascript;+charset=utf-8 8.9300ms
+2023-06-15 17:43:18.562 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.4303ms
+2023-06-15 17:43:18.636 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/v1/swagger.json - -
+2023-06-15 17:43:18.775 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 139.3171ms
+2023-06-15 17:43:28.087 +02:00 [INF] Now listening on: https://localhost:5274
+2023-06-15 17:43:28.112 +02:00 [INF] Now listening on: http://localhost:5165
+2023-06-15 17:43:28.115 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-15 17:43:28.116 +02:00 [INF] Hosting environment: Development
+2023-06-15 17:43:28.117 +02:00 [INF] Content root path: D:\Tanulmányok\Egyetem\Debrecen\not_categorized\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\Projekt\cSharpProjectVaDaMa\Beadando\cSharpProjectVaDaMa\Beadando\SzerverApp\
+2023-06-15 17:43:29.681 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/index.html - -
+2023-06-15 17:43:29.926 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/index.html - - - 200 - text/html;charset=utf-8 248.3001ms
+2023-06-15 17:43:30.649 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/_framework/aspnetcore-browser-refresh.js - -
+2023-06-15 17:43:30.649 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/swagger-ui.css - -
+2023-06-15 17:43:30.650 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/_vs/browserLink - -
+2023-06-15 17:43:30.652 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/_framework/aspnetcore-browser-refresh.js - - - 200 11978 application/javascript;+charset=utf-8 3.4196ms
+2023-06-15 17:43:30.658 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-06-15 17:43:30.660 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/swagger-ui.css - - - 0 143632 text/css 10.9307ms
+2023-06-15 17:43:30.665 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.8162ms
+2023-06-15 17:43:30.703 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/favicon-32x32.png - -
+2023-06-15 17:43:30.705 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-06-15 17:43:30.706 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/favicon-32x32.png - - - 0 628 image/png 2.6725ms
+2023-06-15 17:43:30.767 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/v1/swagger.json - -
+2023-06-15 17:43:30.840 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 72.9636ms
