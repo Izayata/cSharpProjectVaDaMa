@@ -9,7 +9,17 @@
 }
 else
 {
-    <h3>Felvett munkák</h3>
+    //Oldal újratöltése
+    <div>
+        <table style="width: 100%;">
+            <tr>
+                <td style="text-align: left;"><font size="6px">Felvett munkák</font></td>
+                <td style="text-align: right;"><a href="javascript:void(0);" class="btn btn-primary" onclick="location.reload();">Reload</a></td>
+            </tr>
+        </table>
+    </div>
+    
+    //Rekordok kiíratása táblázatos formában
     <table class="table table-bordered table-hover">
         <thead>
             <tr>
@@ -21,7 +31,7 @@ else
                 <th>Az autó hibájának rövid leírásaa</th>
                 <th>Munkaóra esztimáció</th>
                 <th>A hiba súlyossága (1-10)</th>
-                @*<th></th>*@
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -36,7 +46,7 @@ else
                     <td>@job.Description</td>
                     <td>@job.ManHourEstimation</td>
                     <td>@job.Status</td>
-                    @*<td><a href="jobs/@job.Id" class="btn btn-primary">Details</a></td>*@
+                    <td><a href="jobs/@job.Id" class="btn btn-primary">Details</a></td>
                 </tr>
             }
         </tbody>
