@@ -1,4 +1,4 @@
-﻿@page "/job/{id:int}"
+﻿@page "/Job/{id:int?}"
 @using Beadando.Contract;
 @using IrodaiKliensApp.Services
 @inject IJobsService JobService
@@ -10,12 +10,20 @@
 }
 else
 {
-        <h3>@Job.'s details</h3>
+        <h3>@Job.ClientFirstName's details</h3>
 
 
         <EditForm Model="@Job" OnValidSubmit="@HandleValidSubmitAsync">
             <DataAnnotationsValidator />
             <ValidationSummary />
+            <div class="mb-3">
+                <label class="form-label">Client first name</label>
+                <InputText @bind-Value="@Job.ClientFirstName" class="form-control"/>
+            </div>
+                <div class="mb-3">
+                <label class="form-label">Client last name</label>
+                <InputText @bind-Value="@Job.ClientLastName" class="form-control"/>
+            </div>
 
             <div class="mb-3">
                 <label class="form-label">Car Type</label>

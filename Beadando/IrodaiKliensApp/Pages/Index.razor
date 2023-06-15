@@ -7,49 +7,54 @@
 
 @if (Jobs is null)
 {
-        <p>Loading...</p>
+            <p>Loading...</p>
 }
 else
 {
-        <h3>Szerelések</h3>
-        <p>
-            Title: <input type="text" @bind="SearchString" />
-            <button class="btn btn-primary" @onclick="FilterJobs">Filter</button>
-            <button class="btn btn-primary" @onclick="ClearFilter">Clear</button>
-        </p>
-        <table class="table table-bordered table-hover">
-            <thead>
-                <tr>
-                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ClientName))">Ügyfél neve</a></th>
-                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.CarType))">Autó típusa</a></th>
-                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.LicensePlateNumber))">Autó rendszáma</a></th>
-                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ManufacturingYear))">Gyártási év</a></th>
-                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.Category))">Munka kategória</a></th>
-                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.Description))">Az autó hibájának rövid leírása</a></th>
-                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ManHourEstimation))">Munkaóra esztimáció</a></th>
-                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.Severity))">A hiba súlyossága (1-10)</a></th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
+            <h3>Szerelések</h3>
+            <p>
+                Title: <input type="text" @bind="SearchString" />
+                <button class="btn btn-primary" @onclick="FilterJobs">Filter</button>
+                <button class="btn btn-primary" @onclick="ClearFilter">Clear</button>
+            </p>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ClientFirstName))">Ügyfél keresztneve</a></th>
+                        <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ClientLastName))">Ügyfél utónév</a></th>
+                        <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.CarType))">Autó típusa</a></th>
+                        <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.LicensePlateNumber))">Autó rendszáma</a></th>
+                        <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ManufacturingYear))">Gyártási év</a></th>
+                        <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.Category))">Munka kategória</a></th>
+                        <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.Description))">Az autó hibájának rövid leírása</a></th>
+                        <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ManHourEstimation))">Munkaóra esztimáció</a></th>
+                        <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.Severity))">A hiba súlyossága (1-10)</a></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
             @foreach (var job in filteredJobs)
             {
-                        <tr>
-                            <td>@job.ClientName</td>
-                            <td>@job.CarType</td>
-                            <td>@job.LicensePlateNumber</td>
-                            <td>@job.ManufacturingYear</td>
-                            <td>@job.Category</td>
-                            <td>@job.Description</td>
-                            <td>@job.ManHourEstimation</td>
-                            <td>@job.Status</td>
-                            <td><a href="jobs/@job.Id" class="btn btn-primary">Details</a></td>
-                        </tr>
+                                <tr>
+                                    <td>@job.ClientFirstName</td>
+                                    <td>@job.ClientLastName</td>
+                                    <td>@job.CarType</td>
+                                    <td>@job.LicensePlateNumber</td>
+                                    <td>@job.ManufacturingYear</td>
+                                    <td>@job.Category</td>
+                                    <td>@job.Description</td>
+                                    <td>@job.ManHourEstimation</td>
+                                    <td>@job.Status</td>
+                                    <td><a href="job/@job.Id" class="btn btn-primary">Details</a></td>
+                                </tr>
             }
-            </tbody>
-        </table>
+                </tbody>
+            </table>
 
-        <div><a href="/" class="btn btn-primary">Reload</a></div>
+            @*<div><a href="/" class="btn btn-primary">Reload</a></div>*@
+            <div>         
+                <td style="text-align: right;"><a href="javascript:void(0);" class="btn btn-primary" onclick="location.reload();">Reload</a></td>     
+            </div>
 }
 
 @code {
