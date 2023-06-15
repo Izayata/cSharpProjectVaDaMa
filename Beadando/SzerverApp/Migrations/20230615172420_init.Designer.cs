@@ -11,8 +11,8 @@ using SzerverApp;
 namespace SzerverApp.Migrations
 {
     [DbContext(typeof(BeadandoContext))]
-    [Migration("20230615151407_initial")]
-    partial class initial
+    [Migration("20230615172420_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

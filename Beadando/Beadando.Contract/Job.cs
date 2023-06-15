@@ -30,6 +30,7 @@ namespace Beadando.Contract
         [Required]
         public JobCategory Category { get; set; }
 
+        [Required]
         [MaxLength(100)]
         public string Description { get; set; }
 
