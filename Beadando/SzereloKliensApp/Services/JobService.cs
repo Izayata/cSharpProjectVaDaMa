@@ -6,11 +6,11 @@ using SzereloKliensApp.Services;
 
 namespace SzereloKliensApp.Services
 {
-    public class JobServices : IJobServices
+    public class JobService : IJobsService
     {
         private readonly HttpClient _httpClient;
 
-        public JobServices(HttpClient httpClient)
+        public JobService(HttpClient httpClient)
         {
             _httpClient = httpClient;
         }
