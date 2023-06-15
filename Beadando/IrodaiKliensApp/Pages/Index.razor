@@ -5,61 +5,59 @@
 @using System.Linq
 @using System.ComponentModel
 
-
 @if (Jobs is null)
 {
-            <p>Loading...</p>
+        <p>Loading...</p>
 }
 else
 {
-            <h3>Szerelések</h3>
-            <p>
-                Title: <input type="text" @bind="SearchString" />
-                <button class="btn btn-primary" @onclick="FilterJobs">Filter</button>
-                <button class="btn btn-primary" @onclick="ClearFilter">Clear</button>
-            </p>
-            <table class="table table-bordered table-hover">
-                <thead>
-                    <tr>
-                        <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ClientName))">Ügyfél neve</a></th>
-                        <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.CarType))">Autó típusa</a></th>
-                        <th>Autó rendszáma</th>
-                        <th>Gyártási év</th>
-                        <th>Munka kategória</th>
-                        <th>Az autó hibájának rövid leírásaa</th>
-                        <th>Munkaóra esztimáció</th>
-                        <th>A hiba súlyossága (1-10)</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
+        <h3>Szerelések</h3>
+        <p>
+            Title: <input type="text" @bind="SearchString" />
+            <button class="btn btn-primary" @onclick="FilterJobs">Filter</button>
+            <button class="btn btn-primary" @onclick="ClearFilter">Clear</button>
+        </p>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ClientName))">Ügyfél neve</a></th>
+                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.CarType))">Autó típusa</a></th>
+                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.LicensePlateNumber))">Autó rendszáma</a></th>
+                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ManufacturingYear))">Gyártási év</a></th>
+                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.Category))">Munka kategória</a></th>
+                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.Description))">Az autó hibájának rövid leírása</a></th>
+                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ManHourEstimation))">Munkaóra esztimáció</a></th>
+                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.Severity))">A hiba súlyossága (1-10)</a></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
             @foreach (var job in filteredJobs)
             {
-                            <tr>
-                                <td>@job.ClientName</td>
-                                <td>@job.CarType</td>
-                                <td>@job.LicensePlateNumber</td>
-                                <td>@job.ManufacturingYear</td>
-                                <td>@job.Category</td>
-                                <td>@job.Description</td>
-                                <td>@job.ManHourEstimation</td>
-                                <td>@job.Status</td>
-                                <td><a href="jobs/@job.Id" class="btn btn-primary">Details</a></td>
-                            </tr>
+                        <tr>
+                            <td>@job.ClientName</td>
+                            <td>@job.CarType</td>
+                            <td>@job.LicensePlateNumber</td>
+                            <td>@job.ManufacturingYear</td>
+                            <td>@job.Category</td>
+                            <td>@job.Description</td>
+                            <td>@job.ManHourEstimation</td>
+                            <td>@job.Status</td>
+                            <td><a href="jobs/@job.Id" class="btn btn-primary">Details</a></td>
+                        </tr>
             }
-                </tbody>
-            </table>
+            </tbody>
+        </table>
 
-            <div><a href="/" class="btn btn-primary">Reload</a></div>
-
+        <div><a href="/" class="btn btn-primary">Reload</a></div>
 }
 
 @code {
     private IEnumerable<Job> Jobs { get; set; }
     private IEnumerable<Job> filteredJobs { get; set; }
     private string SearchString { get; set; }
-    private string sortBy = ""; // aktuális rendezési kategória
-    private bool sortAscending = true; // rendezés iránya
+    private string sortBy = "";
+    private bool sortAscending = true;
 
     protected override async Task OnInitializedAsync()
     {
@@ -71,30 +69,48 @@ else
     {
         if (sortBy == property)
         {
-            // Ha ugyanarra a kategóriára kattintottak, megfordítjuk az irányt
             sortAscending = !sortAscending;
         }
         else
         {
-            // Ha más kategóriára kattintottak, az irány alapértelmezetten növekvő lesz
             sortBy = property;
             sortAscending = true;
         }
 
-        // Itt végezheted el a tényleges rendezést a Jobs kollekcióban
         if (sortAscending)
         {
-            filteredJobs = filteredJobs.OrderBy(j => GetPropertyValue(j, sortBy));
+            if (property == nameof(Job.ManufacturingYear))
+            {
+                filteredJobs = filteredJobs.OrderBy(j => (int)GetPropertyValue(j, sortBy));
+            }
+            else if (property == nameof(Job.ManHourEstimation))
+            {
+                filteredJobs = filteredJobs.OrderBy(j => (double)GetPropertyValue(j, sortBy));
+            }
+            else
+            {
+                filteredJobs = filteredJobs.OrderBy(j => GetPropertyValue(j, sortBy));
+            }
         }
         else
         {
-            filteredJobs = filteredJobs.OrderByDescending(j => GetPropertyValue(j, sortBy));
+            if (property == nameof(Job.ManufacturingYear))
+            {
+                filteredJobs = filteredJobs.OrderByDescending(j => (int)GetPropertyValue(j, sortBy));
+            }
+            else if (property == nameof(Job.ManHourEstimation))
+            {
+                filteredJobs = filteredJobs.OrderByDescending(j => (double)GetPropertyValue(j, sortBy));
+            }
+            else
+            {
+                filteredJobs = filteredJobs.OrderByDescending(j => GetPropertyValue(j, sortBy));
+            }
         }
     }
 
     private object GetPropertyValue(Job job, string property)
     {
-        // Az adott property értékének lekérése a Job objektumból reflexió segítségével
         return job.GetType().GetProperty(property)?.GetValue(job, null);
     }
 
