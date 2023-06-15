@@ -110,7 +110,27 @@ namespace SzerverApp.Controllers
             return this.NoContent();
         }
 
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Put(int id, [FromBody] JobStatus status)
+        {
 
+            var existingJob = await this._beadandoContext.Jobs.FindAsync(id);
+
+            if (existingJob is null)
+            {
+                return this.NotFound();
+            }
+
+            if (!Enum.IsDefined(typeof(JobStatus), status))
+            {
+                return this.UnprocessableEntity();
+            }
+
+            existingJob.Status = status;
+            await this._beadandoContext.SaveChangesAsync();
+
+            return this.NoContent();
+        }
 
         private static bool JobValidation(Job job)
         {
