@@ -7,30 +7,32 @@ namespace Beadando.Contract
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id;
+        public int Id { get; set; }
 
         [Required]
-        public string ClientName;
+        public string ClientName { get; set; }
 
         [Required]
-        public string CarType;
+        public string CarType { get; set; }
 
         [Required]
-        public string LicensePlateNumber;
+        public string LicensePlateNumber { get; set; }
 
         [Required]
-        public int ManufacturingYear;
+        public int ManufacturingYear { get; set; }
 
         [Required]
-        public string Description;
+        public string Description { get; set; }
 
         [Required]
-        public JobCategory Category;
+        public JobCategory Category { get; set; }
 
         [Required]
-        public double ManHourEstimation;
+        public int Severity { get; set; }
+
+        public double ManHourEstimation { get; set; }
 
         [Required]
-        public JobStatus Status;
+        public JobStatus Status { get; set; }
     }
 }

@@ -1,0 +1,109 @@
+2023-06-14 21:57:10.703 +02:00 [INF] Entity Framework Core 6.0.16 initialized 'BeadandoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: using lazy loading proxies 
+2023-06-14 21:57:13.202 +02:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-06-14 21:57:13.243 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-06-14 21:57:13.288 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-06-14 22:00:40.691 +02:00 [INF] Entity Framework Core 6.0.16 initialized 'BeadandoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: using lazy loading proxies 
+2023-06-14 22:00:41.267 +02:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-06-14 22:00:41.361 +02:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [DemoDB] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+END;
+2023-06-14 22:00:41.443 +02:00 [INF] Executed DbCommand (80ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+DROP DATABASE [DemoDB];
+2023-06-14 22:01:02.956 +02:00 [INF] Entity Framework Core 6.0.16 initialized 'BeadandoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: using lazy loading proxies 
+2023-06-14 22:01:03.968 +02:00 [INF] Executed DbCommand (537ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [DemoDB];
+2023-06-14 22:01:04.066 +02:00 [INF] Executed DbCommand (91ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [DemoDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2023-06-14 22:01:04.089 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-06-14 22:01:04.225 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2023-06-14 22:01:04.230 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-06-14 22:01:04.258 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-06-14 22:01:04.266 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-06-14 22:01:04.286 +02:00 [INF] No migrations were applied. The database is already up to date.
+2023-06-14 22:02:03.848 +02:00 [INF] Now listening on: https://localhost:5274
+2023-06-14 22:02:03.915 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-14 22:02:03.917 +02:00 [INF] Hosting environment: Development
+2023-06-14 22:02:03.918 +02:00 [INF] Content root path: C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\
+2023-06-14 22:02:04.311 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/index.html - -
+2023-06-14 22:02:04.785 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/index.html - - - 200 - text/html;charset=utf-8 477.7522ms
+2023-06-14 22:02:04.864 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/_vs/browserLink - -
+2023-06-14 22:02:04.864 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/_framework/aspnetcore-browser-refresh.js - -
+2023-06-14 22:02:04.883 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 18.8068ms
+2023-06-14 22:02:05.003 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 138.7697ms
+2023-06-14 22:02:05.597 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/favicon-16x16.png - -
+2023-06-14 22:02:05.611 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2023-06-14 22:02:05.613 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/favicon-16x16.png - - - 0 665 image/png 15.9499ms
+2023-06-14 22:02:53.870 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/v1/swagger.json - -
+2023-06-14 22:02:53.898 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 27.9186ms
+2023-06-14 22:03:33.911 +02:00 [INF] Entity Framework Core 6.0.16 initialized 'BeadandoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: using lazy loading proxies 
+2023-06-14 22:03:52.346 +02:00 [INF] Entity Framework Core 6.0.16 initialized 'BeadandoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: using lazy loading proxies 
+2023-06-14 22:03:52.809 +02:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-06-14 22:03:52.847 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-06-14 22:03:52.853 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-06-14 22:03:52.855 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-06-14 22:03:52.888 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-06-14 22:03:52.910 +02:00 [INF] Applying migration '20230614200334_initial'.
+2023-06-14 22:03:52.973 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Jobs] (
+    [Id] int NOT NULL IDENTITY,
+    [ClientName] nvarchar(max) NOT NULL,
+    [CarType] nvarchar(max) NOT NULL,
+    [LicensePlateNumber] nvarchar(max) NOT NULL,
+    [ManufacturingYear] int NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [Category] int NOT NULL,
+    [ManHourEstimation] float NOT NULL,
+    [Status] int NOT NULL,
+    CONSTRAINT [PK_Jobs] PRIMARY KEY ([Id])
+);
+2023-06-14 22:03:52.994 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230614200334_initial', N'6.0.16');
+2023-06-14 22:03:58.266 +02:00 [INF] Now listening on: https://localhost:5274
+2023-06-14 22:03:58.313 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-14 22:03:58.314 +02:00 [INF] Hosting environment: Development
+2023-06-14 22:03:58.315 +02:00 [INF] Content root path: C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzerverApp\
+2023-06-14 22:03:58.886 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/index.html - -
+2023-06-14 22:03:59.236 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/index.html - - - 200 - text/html;charset=utf-8 353.4230ms
+2023-06-14 22:03:59.294 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/_framework/aspnetcore-browser-refresh.js - -
+2023-06-14 22:03:59.294 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/_vs/browserLink - -
+2023-06-14 22:03:59.300 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 5.5859ms
+2023-06-14 22:03:59.324 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.8876ms
+2023-06-14 22:03:59.608 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/v1/swagger.json - -
+2023-06-14 22:03:59.631 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 22.9667ms
+2023-06-14 22:18:12.488 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/_framework/aspnetcore-browser-refresh.js - -
+2023-06-14 22:18:12.490 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 1.7541ms
+2023-06-14 22:18:12.671 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/favicon-16x16.png - -
+2023-06-14 22:18:12.684 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2023-06-14 22:18:12.685 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/favicon-16x16.png - - - 0 665 image/png 14.5838ms
+2023-06-14 22:18:12.786 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5274/swagger/v1/swagger.json - -
+2023-06-14 22:18:12.788 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5274/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.5986ms
