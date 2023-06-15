@@ -76,6 +76,62 @@ namespace SzerverApp.Controllers
             return this.Ok();
         }
 
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Put(int id, [FromBody] Job job)
+        {
+            if (id != job.Id)
+            {
+                return this.BadRequest();
+            }
+
+            var existingJob = await this._beadandoContext.Jobs.FindAsync(id);
+
+            if (existingJob is null)
+            {
+                return this.NotFound();
+            }
+
+            if (!JobValidation(job))
+            {
+                return this.UnprocessableEntity();
+            }
+
+            existingJob.ClientFirstName = job.ClientFirstName;
+            existingJob.ClientLastName = job.ClientLastName;
+            existingJob.CarType = job.CarType;
+            existingJob.LicensePlateNumber = job.LicensePlateNumber;
+            existingJob.ManufacturingYear = job.ManufacturingYear;
+            existingJob.Category = job.Category;
+            existingJob.Description = job.Description;
+            existingJob.Severity = job.Severity;
+            existingJob.ManHourEstimation = ManHourEstimation(existingJob);
+            await this._beadandoContext.SaveChangesAsync();
+
+            return this.NoContent();
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Put(int id, [FromBody] JobStatus status)
+        {
+
+            var existingJob = await this._beadandoContext.Jobs.FindAsync(id);
+
+            if (existingJob is null)
+            {
+                return this.NotFound();
+            }
+
+            if (!Enum.IsDefined(typeof(JobStatus), status))
+            {
+                return this.UnprocessableEntity();
+            }
+
+            existingJob.Status = status;
+            await this._beadandoContext.SaveChangesAsync();
+
+            return this.NoContent();
+        }
+
         private static bool JobValidation(Job job)
         {
             if (job is null)
