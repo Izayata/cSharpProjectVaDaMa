@@ -4,13 +4,13 @@ using System.Net.Http.Json;
 using SzereloKliensApp.Services;
 
 
-namespace IrodaiKliensApp.Services
+namespace SzereloKliensApp.Services
 {
-    public class JobService : IJobsServices
+    public class JobServices : IJobServices
     {
         private readonly HttpClient _httpClient;
 
-        public JobService(HttpClient httpClient)
+        public JobServices(HttpClient httpClient)
         {
             _httpClient = httpClient;
         }

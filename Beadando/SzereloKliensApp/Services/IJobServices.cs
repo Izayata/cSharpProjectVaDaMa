@@ -3,7 +3,7 @@ using System;
 
 namespace SzereloKliensApp.Services
 {
-    public interface IJobsServices
+    public interface IJobServices
     {
         Task<IEnumerable<Job>?> GetAllJobAsync();
 

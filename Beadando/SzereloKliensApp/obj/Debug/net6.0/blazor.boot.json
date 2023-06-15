@@ -196,15 +196,15 @@
       "mscorlib.dll": "sha256-C3gpWQMELcHYfrHU\/1agQUvWTtSNs9Ul2suMxcKFnIc=",
       "netstandard.dll": "sha256-CgGkoZQx73t3qchcsu85kgBcgrjNEOiudArOwKNb18k=",
       "System.Private.CoreLib.dll": "sha256-6nUSjiT7okMlkN897OnDypwppYuK7JxTahOClXkAuwE=",
-      "Beadando.Contract.dll": "sha256-qtfQH0gzzaM3p1QYJ7zB1tV9u0jC32bbUf4xX1M4jps=",
-      "SzereloKliensApp.dll": "sha256-i38p60HnZ\/Qh8MTON1ECGGCsukVMN7208xBiHuzhmUs="
+      "Beadando.Contract.dll": "sha256-Y0HBTDLU5M2EEPPhjhVlzAaUczelrn+vpoafNRgJCwE=",
+      "SzereloKliensApp.dll": "sha256-xed0ciOTDMFf\/UCL68gVVr2bDadI1i72xekqFrV6nJQ="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Beadando.Contract.pdb": "sha256-eaEkwhV6mP9DqXcMSvJ5xDs6urTg4z7bEHuTksubXTw=",
-      "SzereloKliensApp.pdb": "sha256-OxaFTacKa1RBtfvldMU4XWsxgIrzxeZQnNCF8VbTdc0="
+      "Beadando.Contract.pdb": "sha256-qQzJywmf+hKUE42+Yosfxq3N+TDD3PSOGbP4gYjmy+8=",
+      "SzereloKliensApp.pdb": "sha256-9lRC7y5ACtYeWIQncjXM+ViONSBvv7VdOrp\/7\/ZT\/0U="
     },
     "runtime": {
       "dotnet.6.0.16.epwwl9jwj3.js": "sha256-GT2gK+GjOisRXJY+9yh6H8s6K\/KDIsaFMFIgWvAnttY=",

@@ -1,5 +1,7 @@
 ﻿@page "/"
 @using Beadando.Contract;
+@using SzereloKliensApp.Services
+@inject IJobServices JobServices
 
 @if (Jobs is null)
 {
@@ -48,6 +50,6 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        Jobs = await JobService.GetAllJobAsync();
+        Jobs = await JobServices.GetAllJobAsync();
     }
 }
