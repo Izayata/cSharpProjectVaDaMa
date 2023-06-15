@@ -9,29 +9,29 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = SzereloKliensApp
 build_property.RootNamespace = SzereloKliensApp
-build_property.ProjectDir = C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzereloKliensApp\
+build_property.ProjectDir = D:\Tanulmányok\Egyetem\Debrecen\not_categorized\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\Projekt\cSharpProjectVaDaMa\Beadando\cSharpProjectVaDaMa\Beadando\SzereloKliensApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Broxigar\source\repos\cSharpProjectVaDaMa\Beadando\SzereloKliensApp
+build_property.MSBuildProjectDirectory = D:\Tanulmányok\Egyetem\Debrecen\not_categorized\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\Projekt\cSharpProjectVaDaMa\Beadando\cSharpProjectVaDaMa\Beadando\SzereloKliensApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/SzereloKliensApp/App.razor]
+[D:/Tanulmányok/Egyetem/Debrecen/not_categorized/Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY/Projekt/cSharpProjectVaDaMa/Beadando/cSharpProjectVaDaMa/Beadando/SzereloKliensApp/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/SzereloKliensApp/Shared/SurveyPrompt.razor]
+[D:/Tanulmányok/Egyetem/Debrecen/not_categorized/Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY/Projekt/cSharpProjectVaDaMa/Beadando/cSharpProjectVaDaMa/Beadando/SzereloKliensApp/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/SzereloKliensApp/_Imports.razor]
+[D:/Tanulmányok/Egyetem/Debrecen/not_categorized/Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY/Projekt/cSharpProjectVaDaMa/Beadando/cSharpProjectVaDaMa/Beadando/SzereloKliensApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/SzereloKliensApp/Shared/MainLayout.razor]
+[D:/Tanulmányok/Egyetem/Debrecen/not_categorized/Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY/Projekt/cSharpProjectVaDaMa/Beadando/cSharpProjectVaDaMa/Beadando/SzereloKliensApp/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-rxtztfqgf7
 
-[C:/Users/Broxigar/source/repos/cSharpProjectVaDaMa/Beadando/SzereloKliensApp/Shared/NavMenu.razor]
+[D:/Tanulmányok/Egyetem/Debrecen/not_categorized/Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY/Projekt/cSharpProjectVaDaMa/Beadando/cSharpProjectVaDaMa/Beadando/SzereloKliensApp/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-sf93dn99j4

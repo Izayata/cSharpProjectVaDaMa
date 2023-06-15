@@ -4,12 +4,12 @@
 
 namespace SzerverApp.Migrations
 {
-    public partial class initial : Migration
+    public partial class Init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Jobs",
+                name: "Job",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -26,14 +26,14 @@ namespace SzerverApp.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Jobs", x => x.Id);
+                    table.PrimaryKey("PK_Job", x => x.Id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Jobs");
+                name: "Job");
         }
     }
 }

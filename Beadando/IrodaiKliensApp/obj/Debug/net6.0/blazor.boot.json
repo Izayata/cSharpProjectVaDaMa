@@ -196,18 +196,18 @@
       "mscorlib.dll": "sha256-C3gpWQMELcHYfrHU\/1agQUvWTtSNs9Ul2suMxcKFnIc=",
       "netstandard.dll": "sha256-CgGkoZQx73t3qchcsu85kgBcgrjNEOiudArOwKNb18k=",
       "System.Private.CoreLib.dll": "sha256-6nUSjiT7okMlkN897OnDypwppYuK7JxTahOClXkAuwE=",
-      "Beadando.Contract.dll": "sha256-vc6WMXjz+29H7oRYUkkeLhVk3cDZq2QvpeZERLbYvlE=",
-      "IrodaiKliensApp.dll": "sha256-SxbG3Kiw9gJ8uKapSD8lnjxWhQ+IKJaVxaYYG7ZF\/pI="
+      "Beadando.Contract.dll": "sha256-7t++tGTio5Md8mMyYM\/WrCvv42ye2zxD27O+hbq+xgU=",
+      "IrodaiKliensApp.dll": "sha256-J17w\/vgMKQ5kQUj8sy\/J582xKM8gvkWoZRZ7wbVxH2g="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Beadando.Contract.pdb": "sha256-zv1TzOi5WISGMOYH\/vnv0Ing+g1kGRRH3w13ohQaxgU=",
-      "IrodaiKliensApp.pdb": "sha256-e2u1u5JxP3xPOuc16aoT+H49QJWZkSFGknPdOwoLXmw="
+      "Beadando.Contract.pdb": "sha256-\/04SrBrnbB9ZgmZmRNFlnWlaa+ihiKlhJ9S8vapnGVM=",
+      "IrodaiKliensApp.pdb": "sha256-j2Yib+m3G8k5c8iBWYgqCewVRnUg7hIYOHu+X0ojAbY="
     },
     "runtime": {
-      "dotnet.6.0.16.q3gh3d64hc.js": "sha256-GT2gK+GjOisRXJY+9yh6H8s6K\/KDIsaFMFIgWvAnttY=",
+      "dotnet.6.0.16.epwwl9jwj3.js": "sha256-GT2gK+GjOisRXJY+9yh6H8s6K\/KDIsaFMFIgWvAnttY=",
       "dotnet.timezones.blat": "sha256-u8KbOjPcD2\/Pcbb0HaYyOuxEMMBYBUoicERKuSq9KMU=",
       "dotnet.wasm": "sha256-qD0yE2pPRrUZHsuAj5If3uIg1gptLud06+eBaGEftXk=",
       "icudt.dat": "sha256-Zuq0dWAsBm6\/2lSOsz7+H9PvFaRn61KIXHMMwXDfvyE=",
