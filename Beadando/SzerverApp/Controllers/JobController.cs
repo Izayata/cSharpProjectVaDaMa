@@ -1,7 +1,9 @@
 ﻿using Beadando.Contract;
+using Castle.Core.Internal;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Text.RegularExpressions;
 
 namespace SzerverApp.Controllers
 {
@@ -37,17 +39,77 @@ namespace SzerverApp.Controllers
                 return this.NotFound();
             }
 
+
             return this.Ok(job);
         }
 
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] Job job)
         {
+            if (!JobValidation(job))
+            {
+                return this.UnprocessableEntity();
+            }
+
+            job.ManHourEstimation = ManHourEstimation(job);
+            job.Status = JobStatus.Accepted;
 
             this._beadandoContext.Jobs.Add(job);
             await this._beadandoContext.SaveChangesAsync();
 
             return this.Ok();
+        }
+
+        private static bool JobValidation(Job job)
+        {
+            if (job is null)
+            {
+                return false;
+            }
+
+            job.ClientFirstName = ValidateString(job.ClientFirstName);
+            if (job.ClientFirstName.IsNullOrEmpty())
+            {
+                return false;
+            }
+
+            job.ClientLastName = ValidateString(job.ClientLastName);
+            if (job.ClientLastName.IsNullOrEmpty())
+            {
+                return false;
+            }
+
+            job.CarType = ValidateString(job.CarType);
+            if (job.CarType.IsNullOrEmpty())
+            {
+                return false;
+            }
+
+            Regex rgx = new Regex("[A-Z]{3}-[0-9]{3}");
+            if (!rgx.IsMatch(job.LicensePlateNumber)) {
+                return false;
+            }
+
+
+            if (!Enum.IsDefined(typeof(JobCategory), job.Category))
+            {
+                return false;
+            }
+
+            if (!Enum.IsDefined(typeof(JobStatus), job.Status))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        private static string ValidateString(string str)
+        {
+            Regex rgx = new Regex("[^a-zA-Z0-9]");
+            str = rgx.Replace(str, "");
+
+            return str;
         }
 
         private static double ManHourEstimation(Job job)
