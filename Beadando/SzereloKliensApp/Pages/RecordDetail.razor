@@ -1,28 +1,115 @@
-﻿@page "/Job/{id:int}"
+﻿@page "/job/{id:int}"
 @using Beadando.Contract;
 @using SzereloKliensApp.Services
-@inject IJobServices JobServices
+@inject IJobsService JobService
 @inject NavigationManager NavigationManager
 
 @if (Job is null)
 {
-    <p>Loading...</p>
+        <p>Loading...</p>
 }
 else
 {
-    <p>Job.ClientFirstName</p>
-    <h3>RecordDetail</h3>
+        <h3>@Job.ClientFirstName's details</h3>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                @*<th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ClientName))">Ügyfél neve</a></th>*@
+                <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.CarType))">Autó típusa</a></th>
+                <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.LicensePlateNumber))">Autó rendszáma</a></th>
+                <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ManufacturingYear))">Gyártási év</a></th>
+                <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.Category))">Munka kategória</a></th>
+                <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.Description))">Az autó hibájának rövid leírása</a></th>
+                <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ManHourEstimation))">Munkaóra esztimáció</a></th>
+                <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.Severity))">A hiba súlyossága (1-10)</a></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var job in filteredJobs)
+            {
+                <tr>
+                    @*<td>@job.ClientName</td>*@
+                    <td>@job.CarType</td>
+                    <td>@job.LicensePlateNumber</td>
+                    <td>@job.ManufacturingYear</td>
+                    <td>@job.Category</td>
+                    <td>@job.Description</td>
+                    <td>@job.ManHourEstimation</td>
+                    <td>@job.Status</td>
+                    <td><a href="job/@job.Id" class="btn btn-primary">Details</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+        <div class="mb-3">
+                    <label class="form-label">Client first name</label>
+                    <InputText @bind-Value="@Job.ClientFirstName" class="form-control"/>
+                </div>
+                    <div class="mb-3">
+                    <label class="form-label">Client last name</label>
+                    <InputText @bind-Value="@Job.ClientLastName" class="form-control"/>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Car Type</label>
+                    <InputText @bind-Value="@Job.CarType" class="form-control"/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">LicensePlateNumber</label>
+                    <InputText @bind-Value="@Job.LicensePlateNumber" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">ManufacturingYear</label>
+                    <InputNumber @bind-Value="@Job.ManufacturingYear" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Description</label>
+                    <InputText @bind-Value="@Job.Description" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Category</label>
+                    <InputSelect @bind-Value="@Job.Category" class="form-control">
+                        <option value="0"> Body </option>
+                        <option value="1"> Engine </option>
+                        <option value="2"> Undercarriage </option>
+                        <option value="3"> Brakes </option>
+                    </InputSelect>
+                </div>
+
+
+            <EditForm Model="@Job" OnValidSubmit="@HandleValidSubmitAsync">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+                
+
+                <button type="submit" class="btn btn-primary form-control mb-3">Save Changes</button>
+            </EditForm>
+
+        <button @onclick="@HandleDeleteAsync" class="btn btn-danger form-control">Delete</button>
 }
 
-
-
 @code {
+    [Parameter]
     public int Id { get; set; }
 
     private Job? Job { get; set; }
-
+     
     protected override async Task OnInitializedAsync()
     {
-        Job = await JobServices.GetJobsByIdAsync(Id);
+        Job = await JobService.GetJobsByIdAsync(Id);
+    }
+
+    private async Task HandleValidSubmitAsync()
+    {
+        await JobService.UpdatePersonAsync(Id, Job!);
+        NavigationManager.NavigateTo("/");
+    }
+
+    private async Task HandleDeleteAsync()
+    {
+        await JobService.DeletePersonAsync(Id);
+        NavigationManager.NavigateTo("/");
     }
 }

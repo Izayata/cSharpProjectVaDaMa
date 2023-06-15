@@ -1,7 +1,7 @@
 ﻿@page "/"
 @using Beadando.Contract
 @using SzereloKliensApp.Services
-@inject IJobServices JobService
+@inject IJobsService JobService
 @using System.Linq
 @using System.ComponentModel
 
@@ -53,7 +53,7 @@ else
                     <td>@job.Description</td>
                     <td>@job.ManHourEstimation</td>
                     <td>@job.Status</td>
-                    <td><a href="/job/@job.Id" class="btn btn-primary">Details</a></td>
+                    <td><a href="job/@job.Id" class="btn btn-primary">Details</a></td>
                 </tr>
             }
         </tbody>
