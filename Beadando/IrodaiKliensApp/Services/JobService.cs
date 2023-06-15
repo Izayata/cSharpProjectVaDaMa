@@ -16,20 +16,20 @@ namespace IrodaiKliensApp.Services
 
         public Task<IEnumerable<Job>?> GetAllJobAsync()
         {
-            return _httpClient.GetFromJsonAsync<IEnumerable<Job>>("JobContoller");
+            return _httpClient.GetFromJsonAsync<IEnumerable<Job>>("Job");
         }
         
 
         public Task<Job?> GetJobsByIdAsync(int id) =>
-            _httpClient.GetFromJsonAsync<Job?>($"JobContoller/{id}");
+            _httpClient.GetFromJsonAsync<Job?>($"Job/{id}");
 
         public async Task UpdatePersonAsync(int id, Job job) =>
-           await _httpClient.PutAsJsonAsync($"JobContoller/{id}", job);
+           await _httpClient.PutAsJsonAsync($"Job/{id}", job);
 
         public async Task DeletePersonAsync(int id) =>
-            await _httpClient.DeleteAsync($"JobContoller/{id}");
+            await _httpClient.DeleteAsync($"Job/{id}");
 
         public async Task AddPersonAsync(Job job) =>
-            await _httpClient.PostAsJsonAsync("JobContoller", job);
+            await _httpClient.PostAsJsonAsync("Job", job);
     }
 }
