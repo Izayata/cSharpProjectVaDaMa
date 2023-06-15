@@ -11,7 +11,7 @@ namespace SzerverApp
         {
         }
 
-        public virtual DbSet<Job> Job { get; set; }
+        public virtual DbSet<Job> Jobs { get; set; }
 
     }
 }

@@ -21,9 +21,8 @@ namespace SzerverApp.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Job>>> Get()
         {
-            _logger.LogInformation("JobContoller endpoint was called");
-            //var jobs = await _beadandoContext.Job.ToListAsync();
-            var jobs = await _beadandoContext.Job.ToListAsync();
+            _logger.LogInformation("Jobs endpoint was called");
+            var jobs = await _beadandoContext.Jobs.ToListAsync();
             return Ok(jobs);
         }
 

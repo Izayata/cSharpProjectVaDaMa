@@ -62,7 +62,7 @@ namespace SzerverApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Job");
+                    b.ToTable("Jobs");
                 });
 #pragma warning restore 612, 618
         }

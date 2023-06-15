@@ -11,8 +11,8 @@ using SzerverApp;
 namespace SzerverApp.Migrations
 {
     [DbContext(typeof(BeadandoContext))]
-    [Migration("20230615102549_Init")]
-    partial class Init
+    [Migration("20230615122734_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -64,7 +64,7 @@ namespace SzerverApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Job");
+                    b.ToTable("Jobs");
                 });
 #pragma warning restore 612, 618
         }
