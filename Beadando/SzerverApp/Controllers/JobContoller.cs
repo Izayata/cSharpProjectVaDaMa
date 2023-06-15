@@ -14,20 +14,31 @@ namespace SzerverApp.Controllers
 
         public JobContoller(BeadandoContext beadandoContext, ILogger<JobContoller> logger)
         {
-            _beadandoContext = beadandoContext;
-            _logger = logger;
+            this._beadandoContext = beadandoContext;
+            this._logger = logger;
         }
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Job>>> Get()
         {
-            _logger.LogInformation("Jobs endpoint was called");
-            var jobs = await _beadandoContext.Jobs.ToListAsync();
-            return Ok(jobs);
+            this._logger.LogInformation("Jobs endpoint was called");
+            var jobs = await this._beadandoContext.Jobs.ToListAsync();
+            return this.Ok(jobs);
         }
 
-        
 
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Job>> Get(int id)
+        {
+            var job = await this._beadandoContext.Jobs.FindAsync(id);
+
+            if (job is null)
+            {
+                return this.NotFound();
+            }
+
+            return this.Ok(job);
+        }
 
         private double ManHourEstimation(Job job)
         {
