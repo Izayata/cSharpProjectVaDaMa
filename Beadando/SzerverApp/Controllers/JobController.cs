@@ -37,7 +37,7 @@ namespace SzerverApp.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Job>>> Get()
+        public async Task<ActionResult<IEnumerable<Job>>> GetAll()
         {
             this._logger.LogInformation("Jobs endpoint was called");
             var jobs = await this._beadandoContext.Jobs.ToListAsync();
@@ -110,8 +110,8 @@ namespace SzerverApp.Controllers
             return this.NoContent();
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] JobStatus status)
+        [HttpPut("{id}/{status}")]
+        public async Task<IActionResult> Put(int id, JobStatus status)
         {
 
             var existingJob = await this._beadandoContext.Jobs.FindAsync(id);
@@ -158,7 +158,8 @@ namespace SzerverApp.Controllers
             }
 
             Regex rgx = new Regex("[A-Z]{3}-[0-9]{3}");
-            if (!rgx.IsMatch(job.LicensePlateNumber)) {
+            if (!rgx.IsMatch(job.LicensePlateNumber))
+            {
                 return false;
             }
 
