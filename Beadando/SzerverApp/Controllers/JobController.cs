@@ -20,6 +20,22 @@ namespace SzerverApp.Controllers
             this._logger = logger;
         }
 
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var existingJob = await this._beadandoContext.Jobs.FindAsync(id);
+
+            if (existingJob is null)
+            {
+                return this.NotFound();
+            }
+
+            this._beadandoContext.Jobs.Remove(existingJob);
+            await this._beadandoContext.SaveChangesAsync();
+
+            return this.NoContent();
+        }
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Job>>> Get()
         {
