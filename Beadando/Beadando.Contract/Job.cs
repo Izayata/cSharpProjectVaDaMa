@@ -10,18 +10,22 @@ namespace Beadando.Contract
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Client First Name Required!")]
+        [RegularExpression(@"[^a-zA-Z0-9]", ErrorMessage = "Invalid Client First Name Format!")]
         [MaxLength(15)]
         public string ClientFirstName { get; set; }
 
         [Required(ErrorMessage = "Client Last Name Required!")]
         [MaxLength(15)]
+        [RegularExpression(@"[^a-zA-Z0-9]", ErrorMessage = "Invalid Client Last Name Format!")]
         public string ClientLastName { get; set; }
 
         [Required(ErrorMessage = "Car Type Required!")]
         [MaxLength(20)]
+        [RegularExpression(@"[^a-zA-Z0-9]", ErrorMessage = "Invalid Car Type Format!")]
         public string CarType { get; set; }
 
         [Required(ErrorMessage = "License Plate Number Required!")]
+        [RegularExpression(@"[A-Z]{3}-[0-9]{3}", ErrorMessage = "Invalid Client Last Name Format!")]
         public string LicensePlateNumber { get; set; }
 
         [Required(ErrorMessage = "Manufacturing Year Required!")]

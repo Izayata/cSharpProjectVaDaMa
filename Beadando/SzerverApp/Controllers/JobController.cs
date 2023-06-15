@@ -139,7 +139,7 @@ namespace SzerverApp.Controllers
                 return false;
             }
 
-            job.ClientFirstName = ValidateString(job.ClientFirstName);
+            /*job.ClientFirstName = ValidateString(job.ClientFirstName);
             if (job.ClientFirstName.IsNullOrEmpty())
             {
                 return false;
@@ -162,6 +162,7 @@ namespace SzerverApp.Controllers
                 return false;
             }
 
+            */
             if (DateTime.Now.Year < job.ManufacturingYear)
             {
                 return false;
