@@ -1,5 +1,17 @@
-﻿<h3>RecordList</h3>
+﻿@page "/"
+@using Beadando.Contract;
+
+@if (Jobs is null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <h3>Felvett munkák</h3>
+}
+
+
 
 @code {
-
+    private IEnumerable<Job> Jobs { get; set; }
 }
