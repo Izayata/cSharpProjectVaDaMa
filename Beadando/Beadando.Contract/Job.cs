@@ -10,9 +10,15 @@ namespace Beadando.Contract
         public int Id { get; set; }
 
         [Required]
-        public string ClientName { get; set; }
+        [MaxLength(15)]
+        public string ClientFirstName { get; set; }
 
         [Required]
+        [MaxLength(15)]
+        public string ClientLastName { get; set; }
+
+        [Required]
+        [MaxLength(20)]
         public string CarType { get; set; }
 
         [Required]
@@ -24,10 +30,12 @@ namespace Beadando.Contract
         [Required]
         public JobCategory Category { get; set; }
 
-        [Required]
-        public int Severity { get; set; }
-
+        [MaxLength(100)]
         public string Description { get; set; }
+
+        [Required]
+        [Range(1, 10)]
+        public int Severity { get; set; }
 
         public double ManHourEstimation { get; set; }
 
