@@ -1,0 +1,28 @@
+﻿@page "/Job/{id:int}"
+@using Beadando.Contract;
+@using SzereloKliensApp.Services
+@inject IJobServices JobServices
+@inject NavigationManager NavigationManager
+
+@if (Job is null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <p>Job.ClientFirstName</p>
+    <h3>RecordDetail</h3>
+}
+
+
+
+@code {
+    public int Id { get; set; }
+
+    private Job? Job { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Job = await JobServices.GetJobsByIdAsync(Id);
+    }
+}
