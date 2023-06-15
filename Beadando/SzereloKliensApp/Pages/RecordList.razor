@@ -8,6 +8,37 @@
 else
 {
     <h3>Felvett munkák</h3>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Ügyfél neve</th>
+                <th>Autó típusa</th>
+                <th>Autó rendszáma</th>
+                <th>Gyártási év</th>
+                <th>Munka kategória</th>
+                <th>Az autó hibájának rövid leírásaa</th>
+                <th>Munkaóra esztimáció</th>
+                <th>A hiba súlyossága (1-10)</th>
+                @*<th></th>*@
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var job in Jobs)
+            {
+                <tr>
+                    <td>@job.ClientName</td>
+                    <td>@job.CarType</td>
+                    <td>@job.LicensePlateNumber</td>
+                    <td>@job.ManufacturingYear</td>
+                    <td>@job.Category</td>
+                    <td>@job.Description</td>
+                    <td>@job.ManHourEstimation</td>
+                    <td>@job.Status</td>
+                    @*<td><a href="jobs/@job.Id" class="btn btn-primary">Details</a></td>*@
+                </tr>
+            }
+        </tbody>
+    </table>
 }
 
 
