@@ -22,17 +22,15 @@ namespace Beadando.Contract
         public int ManufacturingYear { get; set; }
 
         [Required]
-        public string Description { get; set; }
-
-        [Required]
         public JobCategory Category { get; set; }
 
         [Required]
         public int Severity { get; set; }
 
+        public string Description { get; set; }
+
         public double ManHourEstimation { get; set; }
 
-        [Required]
         public JobStatus Status { get; set; }
     }
 }
