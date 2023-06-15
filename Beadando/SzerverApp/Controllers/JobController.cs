@@ -40,6 +40,16 @@ namespace SzerverApp.Controllers
             return this.Ok(job);
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Post([FromBody] Job job)
+        {
+
+            this._beadandoContext.Jobs.Add(job);
+            await this._beadandoContext.SaveChangesAsync();
+
+            return this.Ok();
+        }
+
         private static double ManHourEstimation(Job job)
         {
             double jobCategoryValue = 0;
