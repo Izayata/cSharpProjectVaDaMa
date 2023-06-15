@@ -8,48 +8,49 @@
 
 @if (Jobs is null)
 {
-        <p>Loading...</p>
+            <p>Loading...</p>
 }
 else
 {
-        <h3>Szerelések</h3>
-        <p>
-            Title: <input type="text" @bind="SearchString" />
-            <button class="btn btn-primary" @onclick="FilterJobs">Filter</button>
-            <button class="btn btn-primary" @onclick="ClearFilter">Clear</button>
-        </p>
-        <table class="table table-bordered table-hover">
-            <thead>
-                <tr>
-                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ClientName))">Ügyfél neve</a></th>
-                    <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.CarType))">Autó típusa</a></th>
-                    <th>Autó rendszáma</th>
-                    <th>Gyártási év</th>
-                    <th>Munka kategória</th>
-                    <th>Az autó hibájának rövid leírásaa</th>
-                    <th>Munkaóra esztimáció</th>
-                    <th>A hiba súlyossága (1-10)</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
+            <h3>Szerelések</h3>
+            <p>
+                Title: <input type="text" @bind="SearchString" />
+                <button class="btn btn-primary" @onclick="FilterJobs">Filter</button>
+                <button class="btn btn-primary" @onclick="ClearFilter">Clear</button>
+            </p>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ClientName))">Ügyfél neve</a></th>
+                        <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.CarType))">Autó típusa</a></th>
+                        <th>Autó rendszáma</th>
+                        <th>Gyártási év</th>
+                        <th>Munka kategória</th>
+                        <th>Az autó hibájának rövid leírásaa</th>
+                        <th>Munkaóra esztimáció</th>
+                        <th>A hiba súlyossága (1-10)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
             @foreach (var job in filteredJobs)
             {
-                        <tr>
-                            <td>@job.ClientName</td>
-                            <td>@job.CarType</td>
-                            <td>@job.LicensePlateNumber</td>
-                            <td>@job.ManufacturingYear</td>
-                            <td>@job.Category</td>
-                            <td>@job.Description</td>
-                            <td>@job.ManHourEstimation</td>
-                            <td>@job.Status</td>
-                        </tr>
+                            <tr>
+                                <td>@job.ClientName</td>
+                                <td>@job.CarType</td>
+                                <td>@job.LicensePlateNumber</td>
+                                <td>@job.ManufacturingYear</td>
+                                <td>@job.Category</td>
+                                <td>@job.Description</td>
+                                <td>@job.ManHourEstimation</td>
+                                <td>@job.Status</td>
+                                <td><a href="jobs/@job.Id" class="btn btn-primary">Details</a></td>
+                            </tr>
             }
-            </tbody>
-        </table>
+                </tbody>
+            </table>
 
-        <div><a href="/" class="btn btn-primary">Reload</a></div>
+            <div><a href="/" class="btn btn-primary">Reload</a></div>
 
 }
 
