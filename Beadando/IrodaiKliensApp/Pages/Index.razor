@@ -1,5 +1,5 @@
 ﻿@page "/"
-@using Beadando.Contract;
+@using Beadando.Contract
 @using IrodaiKliensApp.Services
 @inject IJobsService JobService
 @using System.Linq
@@ -12,18 +12,17 @@
 }
 else
 {
-        <h3>Szerelések</h3>        
+        <h3>Szerelések</h3>
         <p>
-        Title: <input type="text" asp-for="SearchString" />
-        <input type="submit" value="Filter" />
+            Title: <input type="text" @bind="SearchString" />
+            <button class="btn btn-primary" @onclick="FilterJobs">Filter</button>
+            <button class="btn btn-primary" @onclick="ClearFilter">Clear</button>
         </p>
         <table class="table table-bordered table-hover">
             <thead>
                 <tr>
                     <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ClientName))">Ügyfél neve</a></th>
                     <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.CarType))">Autó típusa</a></th>
-                    @*<th>Ügyfél neve</th>*@
-                    @*<th>Autó típusa</th>*@
                     <th>Autó rendszáma</th>
                     <th>Gyártási év</th>
                     <th>Munka kategória</th>
@@ -34,38 +33,38 @@ else
                 </tr>
             </thead>
             <tbody>
-            @foreach (var job in Jobs)
+            @foreach (var job in filteredJobs)
             {
-                <tr>
-                    <td>@job.ClientName</td>
-                    <td>@job.CarType</td>          
-					<td>@job.LicensePlateNumber</td>
-                    <td>@job.ManufacturingYear</td>
-                    <td>@job.Category</td>
-                    <td>@job.Description</td>
-                    <td>@job.ManHourEstimation</td>
-                    <td>@job.Status</td>
-
-                </tr>
-
+                        <tr>
+                            <td>@job.ClientName</td>
+                            <td>@job.CarType</td>
+                            <td>@job.LicensePlateNumber</td>
+                            <td>@job.ManufacturingYear</td>
+                            <td>@job.Category</td>
+                            <td>@job.Description</td>
+                            <td>@job.ManHourEstimation</td>
+                            <td>@job.Status</td>
+                        </tr>
             }
             </tbody>
-        </table>      
-        
-        <div><a href="/" class="btn bth-primary">Reload</a> </div> 
-      
+        </table>
+
+        <div><a href="/" class="btn btn-primary">Reload</a></div>
+
 }
 
 @code {
     private IEnumerable<Job> Jobs { get; set; }
+    private IEnumerable<Job> filteredJobs { get; set; }
+    private string SearchString { get; set; }
+    private string sortBy = ""; // aktuális rendezési kategória
+    private bool sortAscending = true; // rendezés iránya
 
     protected override async Task OnInitializedAsync()
     {
         Jobs = await JobService.GetAllJobAsync();
+        filteredJobs = Jobs;
     }
-
-    private string sortBy = ""; // aktuális rendezési kategória
-    private bool sortAscending = true; // rendezés iránya
 
     private void SortJobsBy(string property)
     {
@@ -84,11 +83,11 @@ else
         // Itt végezheted el a tényleges rendezést a Jobs kollekcióban
         if (sortAscending)
         {
-            Jobs = Jobs.OrderBy(j => GetPropertyValue(j, sortBy));
+            filteredJobs = filteredJobs.OrderBy(j => GetPropertyValue(j, sortBy));
         }
         else
         {
-            Jobs = Jobs.OrderByDescending(j => GetPropertyValue(j, sortBy));
+            filteredJobs = filteredJobs.OrderByDescending(j => GetPropertyValue(j, sortBy));
         }
     }
 
@@ -98,4 +97,40 @@ else
         return job.GetType().GetProperty(property)?.GetValue(job, null);
     }
 
+    private void FilterJobs()
+    {
+        var searchStringLower = SearchString?.ToLower() ?? "";
+
+        if (string.IsNullOrWhiteSpace(searchStringLower))
+        {
+            filteredJobs = Jobs;
+        }
+        else
+        {
+            filteredJobs = Jobs.Where(j => PropertyContainsValue(j, searchStringLower));
+        }
+
+        SortJobsBy(sortBy);
+    }
+
+    private bool PropertyContainsValue(Job job, string value)
+    {
+        var properties = typeof(Job).GetProperties();
+        foreach (var property in properties)
+        {
+            var propertyValue = property.GetValue(job);
+            if (propertyValue != null && propertyValue.ToString().IndexOf(value, StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private void ClearFilter()
+    {
+        SearchString = "";
+        filteredJobs = Jobs;
+        SortJobsBy(sortBy);
+    }
 }
