@@ -501,6 +501,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Beadando.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Beadando.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Beadando.Contract.dll": {}
+        }
       }
     },
     "net6.0/browser-wasm": {
@@ -996,6 +1006,16 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "Beadando.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Beadando.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Beadando.Contract.dll": {}
         }
       }
     }
@@ -1784,10 +1804,16 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Beadando.Contract/1.0.0": {
+      "type": "project",
+      "path": "../Beadando.Contract/Beadando.Contract.csproj",
+      "msbuildProject": "../Beadando.Contract/Beadando.Contract.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Beadando.Contract >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 6.0.15",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.15",
       "StyleCop.Analyzers >= 1.1.118"
@@ -1824,7 +1850,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj": {
+              "projectPath": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

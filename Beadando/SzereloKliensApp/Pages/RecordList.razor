@@ -1,0 +1,65 @@
+﻿@page "/"
+@using Beadando.Contract;
+@using SzereloKliensApp.Services
+@inject IJobServices JobServices
+
+@if (Jobs is null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    //Oldal újratöltése
+    <div>
+        <table style="width: 100%;">
+            <tr>
+                <td style="text-align: left;"><font size="6px">Felvett munkák</font></td>
+                <td style="text-align: right;"><a href="javascript:void(0);" class="btn btn-primary" onclick="location.reload();">Reload</a></td>
+            </tr>
+        </table>
+    </div>
+    
+    //Rekordok kiíratása táblázatos formában
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Ügyfél neve</th>
+                <th>Autó típusa</th>
+                <th>Autó rendszáma</th>
+                <th>Gyártási év</th>
+                <th>Munka kategória</th>
+                <th>Az autó hibájának rövid leírásaa</th>
+                <th>Munkaóra esztimáció</th>
+                <th>A hiba súlyossága (1-10)</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var job in Jobs)
+            {
+                <tr>
+                    <td>@job.ClientLastName @job.ClientFirstName</td>
+                    <td>@job.CarType</td>
+                    <td>@job.LicensePlateNumber</td>
+                    <td>@job.ManufacturingYear</td>
+                    <td>@job.Category</td>
+                    <td>@job.Description</td>
+                    <td>@job.ManHourEstimation</td>
+                    <td>@job.Status</td>
+                    <td><a href="jobs/@job.Id" class="btn btn-primary">Details</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+
+@code {
+    private IEnumerable<Job> Jobs { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Jobs = await JobServices.GetAllJobAsync();
+    }
+}

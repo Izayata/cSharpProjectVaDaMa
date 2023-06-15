@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yFyKj35IR5+tZDQy3v570gj26UnKO1GnumoxLnpCYI4=",
+  "Hash": "fHo94w8BzwJhyl0JB7lBIKOYNNItnxMNLYk/YhzxqjY=",
   "Source": "SzereloKliensApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -16,6 +16,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\SzereloKliensApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Beadando.Contract.dll",
+      "SourceId": "SzereloKliensApp",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\SzereloKliensApp\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Beadando.Contract.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\bin\\Debug\\net6.0\\Beadando.Contract.dll"
+    },
+    {
+      "Identity": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\SzereloKliensApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Beadando.Contract.pdb",
+      "SourceId": "SzereloKliensApp",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\SzereloKliensApp\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Beadando.Contract.pdb",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "symbol",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\bin\\Debug\\net6.0\\Beadando.Contract.pdb"
+    },
     {
       "Identity": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\SzereloKliensApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.boot.json",
       "SourceId": "SzereloKliensApp",
@@ -4437,6 +4471,23 @@
       "OriginalItemSpec": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\SzereloKliensApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\SzereloKliensApp.pdb"
     },
     {
+      "Identity": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\SzereloKliensApp\\obj\\Debug\\net6.0\\build-gz\\EOGCj+F0.gz",
+      "SourceId": "SzereloKliensApp",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\SzereloKliensApp\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Beadando.Contract.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\SzereloKliensApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Beadando.Contract.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\SzereloKliensApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Beadando.Contract.pdb"
+    },
+    {
       "Identity": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\SzereloKliensApp\\obj\\Debug\\net6.0\\build-gz\\Eol1Wu7A.gz",
       "SourceId": "SzereloKliensApp",
       "SourceType": "Computed",
@@ -4809,6 +4860,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\SzereloKliensApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Data.Common.dll"
+    },
+    {
+      "Identity": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\SzereloKliensApp\\obj\\Debug\\net6.0\\build-gz\\HovDa07b.gz",
+      "SourceId": "SzereloKliensApp",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\SzereloKliensApp\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Beadando.Contract.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\SzereloKliensApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Beadando.Contract.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\SzereloKliensApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Beadando.Contract.dll"
     },
     {
       "Identity": "D:\\Tanulmányok\\Egyetem\\Debrecen\\not_categorized\\Szoftverfejlesztes_cSharp_nyelven_nagyvallalati_kornyezetben_NAY\\Projekt\\cSharpProjectVaDaMa\\Beadando\\cSharpProjectVaDaMa\\Beadando\\SzereloKliensApp\\obj\\Debug\\net6.0\\build-gz\\HTijiO5b.gz",

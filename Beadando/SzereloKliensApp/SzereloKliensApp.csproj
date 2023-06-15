@@ -16,8 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
-    <Folder Include="Pages\" />
+    <ProjectReference Include="..\Beadando.Contract\Beadando.Contract.csproj" />
   </ItemGroup>
 
 </Project>
