@@ -1,0 +1,163 @@
+﻿@page "/"
+@using Beadando.Contract
+@using UjKliens.Services
+@inject IJobServices JobService
+@using System.Linq
+@using System.ComponentModel
+
+@if (Jobs is null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    //Oldal újratöltése
+    <div>
+        <table style="width: 100%;">
+            <tr>
+                <td style="text-align: left;"><font size="6px">Felvett munkák</font></td>
+                <td style="text-align: right;"><a href="javascript:void(0);" class="btn btn-primary" onclick="location.reload();">Reload</a></td>
+            </tr>
+        </table>
+    </div>
+
+    //Rekordok kiíratása táblázatos formában
+    <p>
+        Title: <input type="text" @bind="SearchString" />
+        <button class="btn btn-primary" @onclick="FilterJobs">Filter</button>
+        <button class="btn btn-primary" @onclick="ClearFilter">Clear</button>
+    </p>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                @*<th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ClientName))">Ügyfél neve</a></th>*@
+                <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.CarType))">Autó típusa</a></th>
+                <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.LicensePlateNumber))">Autó rendszáma</a></th>
+                <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ManufacturingYear))">Gyártási év</a></th>
+                <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.Category))">Munka kategória</a></th>
+                <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.Description))">Az autó hibájának rövid leírása</a></th>
+                <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ManHourEstimation))">Munkaóra esztimáció</a></th>
+                <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.Severity))">A hiba súlyossága (1-10)</a></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var job in filteredJobs)
+            {
+                <tr>
+                    @*<td>@job.ClientName</td>*@
+                    <td>@job.CarType</td>
+                    <td>@job.LicensePlateNumber</td>
+                    <td>@job.ManufacturingYear</td>
+                    <td>@job.Category</td>
+                    <td>@job.Description</td>
+                    <td>@job.ManHourEstimation</td>
+                    <td>@job.Status</td>
+                    <td><a href="job/@job.Id" class="btn btn-primary">Details</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    
+}
+
+@code {
+    private IEnumerable<Job> Jobs { get; set; }
+    private IEnumerable<Job> filteredJobs { get; set; }
+    private string SearchString { get; set; }
+    private string sortBy = "";
+    private bool sortAscending = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Jobs = await JobService.GetAllJobAsync();
+        filteredJobs = Jobs;
+    }
+
+    private void SortJobsBy(string property)
+    {
+        if (sortBy == property)
+        {
+            sortAscending = !sortAscending;
+        }
+        else
+        {
+            sortBy = property;
+            sortAscending = true;
+        }
+
+        if (sortAscending)
+        {
+            if (property == nameof(Job.ManufacturingYear))
+            {
+                filteredJobs = filteredJobs.OrderBy(j => (int)GetPropertyValue(j, sortBy));
+            }
+            else if (property == nameof(Job.ManHourEstimation))
+            {
+                filteredJobs = filteredJobs.OrderBy(j => (double)GetPropertyValue(j, sortBy));
+            }
+            else
+            {
+                filteredJobs = filteredJobs.OrderBy(j => GetPropertyValue(j, sortBy));
+            }
+        }
+        else
+        {
+            if (property == nameof(Job.ManufacturingYear))
+            {
+                filteredJobs = filteredJobs.OrderByDescending(j => (int)GetPropertyValue(j, sortBy));
+            }
+            else if (property == nameof(Job.ManHourEstimation))
+            {
+                filteredJobs = filteredJobs.OrderByDescending(j => (double)GetPropertyValue(j, sortBy));
+            }
+            else
+            {
+                filteredJobs = filteredJobs.OrderByDescending(j => GetPropertyValue(j, sortBy));
+            }
+        }
+    }
+
+    private object GetPropertyValue(Job job, string property)
+    {
+        return job.GetType().GetProperty(property)?.GetValue(job, null);
+    }
+
+    private void FilterJobs()
+    {
+        var searchStringLower = SearchString?.ToLower() ?? "";
+
+        if (string.IsNullOrWhiteSpace(searchStringLower))
+        {
+            filteredJobs = Jobs;
+        }
+        else
+        {
+            filteredJobs = Jobs.Where(j => PropertyContainsValue(j, searchStringLower));
+        }
+
+        SortJobsBy(sortBy);
+    }
+
+    private bool PropertyContainsValue(Job job, string value)
+    {
+        var properties = typeof(Job).GetProperties();
+        foreach (var property in properties)
+        {
+            var propertyValue = property.GetValue(job);
+            if (propertyValue != null && propertyValue.ToString().IndexOf(value, StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private void ClearFilter()
+    {
+        SearchString = "";
+        filteredJobs = Jobs;
+        SortJobsBy(sortBy);
+    }
+}

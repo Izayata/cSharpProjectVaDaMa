@@ -9,41 +9,37 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = UjKliens
 build_property.RootNamespace = UjKliens
-build_property.ProjectDir = D:\C# projekt\Final\cSharpProjectVaDaMa\cSharpProjectVaDaMa\Beadando\UjKliens\
+build_property.ProjectDir = D:\Tanulmányok\Egyetem\CSharpBeadando\cSharpProjectVaDaMa\Beadando\UjKliens\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\C# projekt\Final\cSharpProjectVaDaMa\cSharpProjectVaDaMa\Beadando\UjKliens
+build_property.MSBuildProjectDirectory = D:\Tanulmányok\Egyetem\CSharpBeadando\cSharpProjectVaDaMa\Beadando\UjKliens
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/C\# projekt/Final/cSharpProjectVaDaMa/cSharpProjectVaDaMa/Beadando/UjKliens/App.razor]
+[D:/Tanulmányok/Egyetem/CSharpBeadando/cSharpProjectVaDaMa/Beadando/UjKliens/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\# projekt/Final/cSharpProjectVaDaMa/cSharpProjectVaDaMa/Beadando/UjKliens/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[D:/Tanulmányok/Egyetem/CSharpBeadando/cSharpProjectVaDaMa/Beadando/UjKliens/Pages/JobDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9iRGV0YWlscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\# projekt/Final/cSharpProjectVaDaMa/cSharpProjectVaDaMa/Beadando/UjKliens/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+[D:/Tanulmányok/Egyetem/CSharpBeadando/cSharpProjectVaDaMa/Beadando/UjKliens/Pages/RecordList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjb3JkTGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\# projekt/Final/cSharpProjectVaDaMa/cSharpProjectVaDaMa/Beadando/UjKliens/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/C\# projekt/Final/cSharpProjectVaDaMa/cSharpProjectVaDaMa/Beadando/UjKliens/Shared/SurveyPrompt.razor]
+[D:/Tanulmányok/Egyetem/CSharpBeadando/cSharpProjectVaDaMa/Beadando/UjKliens/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\# projekt/Final/cSharpProjectVaDaMa/cSharpProjectVaDaMa/Beadando/UjKliens/_Imports.razor]
+[D:/Tanulmányok/Egyetem/CSharpBeadando/cSharpProjectVaDaMa/Beadando/UjKliens/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\# projekt/Final/cSharpProjectVaDaMa/cSharpProjectVaDaMa/Beadando/UjKliens/Shared/MainLayout.razor]
+[D:/Tanulmányok/Egyetem/CSharpBeadando/cSharpProjectVaDaMa/Beadando/UjKliens/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-x10ew2m380
 
-[D:/C\# projekt/Final/cSharpProjectVaDaMa/cSharpProjectVaDaMa/Beadando/UjKliens/Shared/NavMenu.razor]
+[D:/Tanulmányok/Egyetem/CSharpBeadando/cSharpProjectVaDaMa/Beadando/UjKliens/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-02vgn8v134

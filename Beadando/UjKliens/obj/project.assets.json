@@ -498,6 +498,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Beadando.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Beadando.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Beadando.Contract.dll": {}
+        }
       }
     },
     "net6.0/browser-wasm": {
@@ -990,6 +1000,16 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "Beadando.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Beadando.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Beadando.Contract.dll": {}
         }
       }
     }
@@ -1753,28 +1773,39 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Beadando.Contract/1.0.0": {
+      "type": "project",
+      "path": "../Beadando.Contract/Beadando.Contract.csproj",
+      "msbuildProject": "../Beadando.Contract/Beadando.Contract.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Beadando.Contract >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 6.0.11",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.11"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tarad\\.nuget\\packages\\": {}
+    "C:\\Users\\moonw\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\cSharpProjectVaDaMa\\Beadando\\UjKliens\\UjKliens.csproj",
+      "projectUniqueName": "D:\\Tanulmányok\\Egyetem\\CSharpBeadando\\cSharpProjectVaDaMa\\Beadando\\UjKliens\\UjKliens.csproj",
       "projectName": "UjKliens",
-      "projectPath": "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\cSharpProjectVaDaMa\\Beadando\\UjKliens\\UjKliens.csproj",
-      "packagesPath": "C:\\Users\\tarad\\.nuget\\packages\\",
-      "outputPath": "D:\\C# projekt\\Final\\cSharpProjectVaDaMa\\cSharpProjectVaDaMa\\Beadando\\UjKliens\\obj\\",
+      "projectPath": "D:\\Tanulmányok\\Egyetem\\CSharpBeadando\\cSharpProjectVaDaMa\\Beadando\\UjKliens\\UjKliens.csproj",
+      "packagesPath": "C:\\Users\\moonw\\.nuget\\packages\\",
+      "outputPath": "D:\\Tanulmányok\\Egyetem\\CSharpBeadando\\cSharpProjectVaDaMa\\Beadando\\UjKliens\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\tarad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\moonw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1787,7 +1818,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Tanulmányok\\Egyetem\\CSharpBeadando\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj": {
+              "projectPath": "D:\\Tanulmányok\\Egyetem\\CSharpBeadando\\cSharpProjectVaDaMa\\Beadando\\Beadando.Contract\\Beadando.Contract.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1824,7 +1859,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-            "version": "[6.0.13, 6.0.13]"
+            "version": "[6.0.16, 6.0.16]"
           }
         ],
         "frameworkReferences": {
@@ -1832,7 +1867,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
