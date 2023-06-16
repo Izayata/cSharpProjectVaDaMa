@@ -1,0 +1,113 @@
+﻿@page "/Job/{id:int?}"
+@using Beadando.Contract;
+@using Beadando.Contract;
+@using UjKliens.Services;
+@inject IJobServices JobService;
+@inject NavigationManager NavigationManager;
+
+@if (Job is null)
+{
+        <p>Loading...</p>
+}
+else
+{
+        <h3>Job Details</h3>
+        <div>
+        <label class="form-label"><b>Client Name:</b> @Job.ClientFirstName @Job.ClientLastName</label>
+        </div>
+        <div>
+        <label class="form-label"><b>Car Type:</b> @Job.CarType</label>
+        </div>
+        <div>
+        <label class="form-label"><b>License Plate:</b> @Job.LicensePlateNumber</label>
+        </div>
+        <div>
+        <label class="form-label"><b>Year of Manufacturing:</b> @Job.ManufacturingYear</label>
+        </div>
+        <div>
+        <label class="form-label"><b>Car Type:</b> @Job.CarType</label>
+        </div>
+        <div>
+        <label class="form-label"><b>Job Description:</b> @Job.Description</label>
+        </div>
+        @*<div>*@
+        @*<label class="form-label"><b>Current Job Status:</b> @JobStatus</label>*@
+        @*</div>*@
+        
+
+            
+                        @if (@Job.Status == JobStatus.Accepted)
+                        {
+                            <EditForm Model="@Job" OnValidSubmit="@HandleValidSubmitAsync">
+                                <DataAnnotationsValidator />
+                                <ValidationSummary />
+                                <div class="mb-3" style="display:flex;flex-wrap:wrap;align-items:center">
+                                    <label class="form-label" style="margin:0.5em 0.5em 0.5em 0"><b>Current Job Status:</b></label>
+                                    <select class="form-select" @onchange="HandleStatusChange" style="width:9em;align-content:center">
+                                        <option value="0" selected>Accepted</option>
+                                        <option value="1" >In Progress</option>
+                                        <option value="2" >Completed</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary form-control mb-3" style="width:9.5em">Save Changes</button>
+                            </EditForm>
+                        } else if (@Job.Status == JobStatus.InProgress)
+                        {
+                            <EditForm Model="@Job" OnValidSubmit="@HandleValidSubmitAsync">
+                                <DataAnnotationsValidator />
+                                <ValidationSummary />
+                                <div class="mb-3" style="display:flex;flex-wrap:wrap;align-items:center">
+                                    <label class="form-label" style="margin:0.5em 0.5em 0.5em 0"><b>Current Job Status:</b></label>
+                                    <select class="form-select" @onchange="HandleStatusChange" style="width:9em;align-content:center">
+                                        <option value="0" >Accepted</option>
+                                        <option value="1" selected>In Progress</option>
+                                        <option value="2">Completed</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary form-control mb-3" style="width:9.5em">Save Changes</button>
+                            </EditForm>
+                        } else if (@Job.Status == JobStatus.Completed)
+                        {
+                            <EditForm Model="@Job" OnValidSubmit="@HandleValidSubmitAsync">
+                                <DataAnnotationsValidator />
+                                <ValidationSummary />
+                                <div class="mb-3" style="display:flex;flex-wrap:wrap;align-items:center">
+                                    <label class="form-label" style="margin:0.5em 0.5em 0.5em 0"><b>Current Job Status:</b></label>
+                                    <select class="form-select" @onchange="HandleStatusChange" style="width:9em;align-content:center">
+                                        <option value="0" >Accepted</option>
+                                        <option value="1" >In Progress</option>
+                                        <option value="2" selected>Completed</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary form-control mb-3" style="width:9.5em">Save Changes</button>
+                            </EditForm>
+                        }
+                        
+                    
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private Job? Job { get; set; }
+
+    private JobStatus? CurrentStatus;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Job = await JobService.GetJobsByIdAsync(Id);
+        CurrentStatus = Job.Status;
+    }
+
+    private async Task HandleValidSubmitAsync()
+    {
+        await JobService.UpdateJobStatusAsync(Id, Job.Status!);
+        NavigationManager.NavigateTo("/");
+    }
+
+    private void HandleStatusChange(ChangeEventArgs e)
+    {
+        Job.Status = (JobStatus)Enum.Parse(typeof(JobStatus), e.Value.ToString());
+    }
+}

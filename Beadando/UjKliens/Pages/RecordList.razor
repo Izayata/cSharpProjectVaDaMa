@@ -30,7 +30,7 @@ else
     <table class="table table-bordered table-hover">
         <thead>
             <tr>
-                @*<th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ClientName))">Ügyfél neve</a></th>*@
+                <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ClientFirstName))">Ügyfél neve</a></th>
                 <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.CarType))">Autó típusa</a></th>
                 <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.LicensePlateNumber))">Autó rendszáma</a></th>
                 <th><a href="#" @onclick="() => SortJobsBy(nameof(Job.ManufacturingYear))">Gyártási év</a></th>
@@ -45,7 +45,7 @@ else
             @foreach (var job in filteredJobs)
             {
                 <tr>
-                    @*<td>@job.ClientName</td>*@
+                    <td>@job.ClientFirstName @job.ClientLastName</td>
                     <td>@job.CarType</td>
                     <td>@job.LicensePlateNumber</td>
                     <td>@job.ManufacturingYear</td>

@@ -196,15 +196,15 @@
       "mscorlib.dll": "sha256-C3gpWQMELcHYfrHU\/1agQUvWTtSNs9Ul2suMxcKFnIc=",
       "netstandard.dll": "sha256-CgGkoZQx73t3qchcsu85kgBcgrjNEOiudArOwKNb18k=",
       "System.Private.CoreLib.dll": "sha256-6nUSjiT7okMlkN897OnDypwppYuK7JxTahOClXkAuwE=",
-      "Beadando.Contract.dll": "sha256-uXNvZopReBEOiejsePC4+rvPcKVKRT4dIW5oDkpFiQY=",
-      "UjKliens.dll": "sha256-X91TJbX7uNy1oBcdFVvmxUJuv1Qg+6YmRTYyDhwpRAQ="
+      "Beadando.Contract.dll": "sha256-K\/\/N+9lUwey5BbMPyia7VIOzTIXxtYWGZyiTxMCihDU=",
+      "UjKliens.dll": "sha256-b1olJi1ZC\/pdsrD9FY5W4peU7Bal2eOIuJZyCjefHFs="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Beadando.Contract.pdb": "sha256-dweu79FvSoogQT1sGeOmEd8IW8IZH3L+63WR5XRBaN4=",
-      "UjKliens.pdb": "sha256-yqhJD4PlSgxyu6S+yuGfLj0F+0LMpeW0O7m0dV6M6Hg="
+      "Beadando.Contract.pdb": "sha256-rFyIs5tjr+onzjP3lZj\/m5q6zTAFydKTzyMM4RCABO0=",
+      "UjKliens.pdb": "sha256-O9s6N2yjqsqhDhgikW6UAtTsM9afCYwtQqXVQNVU97E="
     },
     "runtime": {
       "dotnet.6.0.16.epwwl9jwj3.js": "sha256-GT2gK+GjOisRXJY+9yh6H8s6K\/KDIsaFMFIgWvAnttY=",
